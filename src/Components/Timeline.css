@@ -1,0 +1,113 @@
+.timeline-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: relative;
+  padding: 80px 0; /* Provide some spacing at the top and bottom */
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 120px; /* Space out the items */
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-text {
+  position: absolute;
+  text-align: center;
+  width: 200px; /* Adjust the width as needed */
+  margin: 0;
+  padding: 5px;
+  z-index: 1;
+}
+
+/* Text position for even items */
+.timeline-item.even .timeline-text {
+  bottom: 120%; /* Adjust distance from the dot */
+}
+
+/* Text position for odd items */
+.timeline-item.odd .timeline-text {
+  top: 120%; /* Adjust distance from the dot */
+}
+
+.timeline-year {
+  font-weight: bold;
+}
+
+.timeline-description {
+  font-size: 0.9rem;
+}
+
+/* Line connecting dots */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 0; /* Ensure it's behind the dots */
+}
+
+/* Ensure the text is readable over the line */
+.timeline-text {
+  background: white; /* Change this as needed */
+  padding: 4px;
+  border-radius: 10%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds a shadow for better readability */
+}
+
+/* Responsive adjustment */
+@media (max-width: 1278px) {
+  /* Hide the dots only on mobile */
+  .timeline-dot {
+    display: none;
+  }
+
+  /* Adjust the timeline container for vertical line */
+  .timeline-container {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Adjust timeline items */
+  .timeline-item {
+    padding: 15px 10px;
+    align-items: center;
+  }
+
+  /* Center the text in mobile */
+  .timeline-text {
+    position: relative;
+    margin-top: 10px;
+    width: 90%; /* Adjust width for mobile readability */
+    text-align: center;
+  }
+
+  /* Create the vertical line in the timeline */
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    height: 100%; /* Full height for vertical line */
+    width: 2px; /* Adjust width of the line */
+    left: 50%; /* Center the line */
+    top: 0;
+    transform: translateX(-50%);
+    background-color: black;
+    z-index: 0;
+  }
+}
