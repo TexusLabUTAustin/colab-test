@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/colab-test/static/css/main.915eeb07.css",
-    "main.js": "/colab-test/static/js/main.f5ebfad9.js",
+    "main.css": "/colab-test/static/css/main.934a3a83.css",
+    "main.js": "/colab-test/static/js/main.d43128ae.js",
     "static/js/453.219943e3.chunk.js": "/colab-test/static/js/453.219943e3.chunk.js",
     "index.html": "/colab-test/index.html",
-    "main.915eeb07.css.map": "/colab-test/static/css/main.915eeb07.css.map",
-    "main.f5ebfad9.js.map": "/colab-test/static/js/main.f5ebfad9.js.map",
+    "main.934a3a83.css.map": "/colab-test/static/css/main.934a3a83.css.map",
+    "main.d43128ae.js.map": "/colab-test/static/js/main.d43128ae.js.map",
     "453.219943e3.chunk.js.map": "/colab-test/static/js/453.219943e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.915eeb07.css",
-    "static/js/main.f5ebfad9.js"
+    "static/css/main.934a3a83.css",
+    "static/js/main.d43128ae.js"
   ]
 }
