@@ -3,11 +3,12 @@
 .footer-container{
     display:flex;
     flex-direction:column;
-    height:auto;
+    height:400px;
     align-items:center;
     background-color:#E8EBEF
 
 }
+
 
 .footer-title-container{
     justify-content:center;
@@ -41,5 +42,6 @@
 }
 
 .footer-logo{
-    height:150px;
+    height:100px;
+    margin-bottom:50px;
 }

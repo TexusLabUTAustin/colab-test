@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 import './About.css'
 
 const About = () => {
@@ -5,6 +7,24 @@ const About = () => {
         
         
         <div className="focus">
+            <div className="navbar-tmp">
+                <div className="navbar-logo-tmp">
+                <Link to="/">
+                    <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" />
+                </Link>
+                </div>
+                <div className="navbar-buttons-tmp">
+                <Link to="/about">
+                    <button className="navbar-button-tmp">About</button>
+                    </Link>
+                    <Link to="/projects">
+                    <button className="navbar-button-tmp">Projects</button>
+                    </Link>
+                    <Link to="/contact">
+                    <button className="navbar-button-tmp">Contact</button>
+                    </Link>
+                </div>
+            </div>
             <div className="focus-header">
                 <div className='focus-header-text'>
                 <h1 className='focus-header-name'> <span style={{ color:"#B25321"}}>About</span> <br/> UT City & Climate CoLab</h1>
@@ -162,10 +182,7 @@ const About = () => {
                                 <p className="headshot-text">Zach Baumer</p>
                             </div>
 
-                            <div className="headshot">
-                                <img src={`${process.env.PUBLIC_URL}/images/headshot.jpg`} alt="Headshot 3"/>
-                                <p className="headshot-text">TBA</p>
-                            </div>
+                            
                         </div>
                     </div>
                     

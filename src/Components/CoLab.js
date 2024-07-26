@@ -2,6 +2,7 @@ import React from 'react';
 import "./CoLab.css";
 import Timeline from './Timeline';
 import { Helmet } from 'react-helmet';
+import Navbar from './Navbar';
 
 
 
@@ -39,12 +40,13 @@ const CoLab = () => {
 
 
         <div className="colab-header">
+        <Navbar />
             <div className="top-banner">
-                <img src={`${process.env.PUBLIC_URL}/images/coa.svg`} className="colab-logo"/>
+                <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} className="colab-logo"/>
             </div>
-            <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline.jpg`} className="top-image"/> 
+            <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="overlay">
-                <h1>UT City + Climate Co-Lab</h1>
+                <h1>UT-City Climate Co-Lab</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/coa.svg`} className="coa-logo"/>
 
              <img src={`${process.env.PUBLIC_URL}/images/seal.svg`} className="ut-seal"/>
@@ -69,7 +71,7 @@ const CoLab = () => {
         <h1>What is <br/>the <span style={{ color: '#B25321' }}>CoLab?</span></h1>
     </div>
     <div className="intro-content">
-        <p>The UT City & Climate Co-Lab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities</p>
+        <p>The UT City & Climate Co-Lab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
 
     </div>
     </div>

@@ -6,6 +6,36 @@
     
     
 }
+
+.navbar-tmp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 220px;
+    background-color: #fff; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.navbar-logo-tmp img {
+    height: 80px; /* Adjust the logo size as needed */
+}
+
+.navbar-buttons-tmp {
+    display: flex;
+}
+
+.navbar-button-tmp {
+    margin-left: 10px; /* Space between buttons */
+    padding: 10px 20px;
+    color: #02214C; /* Button text color */
+    border: none;
+    cursor: pointer;
+    background-color:white;
+}
+
+.navbar-button-tmp:hover {
+    background-color: #c8c8c8; /* Darker shade on hover */
+}
 .focus-header{
     padding-top:40px;
     padding-bottom:40px;
@@ -14,7 +44,7 @@
     display:flex;
     height:150px;
     justify-content:center;
-    padding-left:80px;
+    padding-left:50px;
     
 
     
@@ -24,7 +54,7 @@
     width:min(1200px, 100%);
     
     text-align:left;
-    padding-left:80px;
+    padding-left:50px;
 }
 
 .focus-header-name{
@@ -48,10 +78,10 @@
 }
 .ut-focus-box{
     padding-right:80px;
-    padding-left:80px;
+    padding-left:50px;
 }
 .city-focus-box{
-    padding-left:60px;
+    padding-left:50px;
     padding-right:60px;
 }
 
@@ -63,7 +93,7 @@
     align-items:stretch;
     
     justify-content: center;
-    padding-left:80px;
+    padding-left:50px;
     padding-top:40px;
 }
 
@@ -156,39 +186,46 @@ li {
 
 }
 
-.colab-ongoing-card { 
-    flex-grow:0;
-    flex-shrink:0;
-    
-    
-    width:190px ; 
-    height:400px;
-    border:1px solid #f0f0f0;
-    border-radius:8%;
-    padding:20px;
-    text-align:center;
-    background-color:white;
+.colab-ongoing-card {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 190px;
+    height: 400px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
     margin: 0 10px;
-    
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .colab-section{
-    transform:translate(0,-20%);
+    transform:translate(0,-15%);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height:450px;
 
 }
-.ongoing-title{
-    font-size:1.2em;
+.ongoing-title {
+    font-size: 1.2em;
     line-height: 1.2;
-    text-align:left;
-    margin-top:20px;
+    text-align: center;
+    margin-top: 20px;
+    height: 60px; /* Set a fixed height for the title */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
 }
-
 .colab-ongoing-card p{
     margin-top:20px;
     text-align: left;
-    font-size:1rem;
+    font-size:0.9rem;
+    height:280px;
 }
 
 .circle-symbol{
@@ -219,6 +256,8 @@ li {
     margin-bottom: 20px;
     transform:translate(-300px, 0);
     color:#2A5B31;
+    margin-right:140px;
+    font-size:2.5rem;
 
 }
 
@@ -227,22 +266,22 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width:1200px;
-    margin:  auto;
-    
+    max-width: 1200px;
+    margin: auto;
 }
 
 .top-level {
     display: flex;
     justify-content: space-around;
-    width: 70%;
-    margin-bottom:40px;
+    width: 800px; /* Set to an absolute value */
+    margin-bottom: 40px;
 }
+
 .bottom-level {
     display: flex;
     justify-content: space-between;
-    position:relative;
-    width: 80%;
+    position: relative;
+    width: 900px; /* Set to an absolute value */
 }
 
 .circle-and-line {
@@ -262,14 +301,14 @@ li {
 .vertical-line-2 {
     position: absolute;
     top: -22px;  /* Adjust this value based on your actual layout */
-    bottom: 50px;  /* Extend upwards */
+    bottom: 52px;  /* Extend upwards */
     width: 4px;
-    left:50%;
+    left: 50%;
     background-color: #02214C;
     z-index: -1;  /* Send to back */
-
 }
-.vertical-line-container{
+
+.vertical-line-container {
     position: absolute;
     height: 100%;
     display: flex;
@@ -278,31 +317,38 @@ li {
     width: 100%;
 }
 
-.horizontal-line-container,.horizontal-line-container-2{
-     position: absolute;
+.horizontal-line-container {
+    position: absolute;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 646px;
+}
+
+.horizontal-line-container-2{
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 
 }
-.horizontal-line-1{
-    width:59%;
-    height:4px;
+
+.horizontal-line-1 {
+    width: 690px; /* Set to an absolute value */
+    height: 4px;
     background-color: #02214C;
-    transform:translate(0,0);
+    transform: translate(0, 0);
 }
 
-.horizontal-line-2{
-    width:calc(40%);
-    height:4px;
+.horizontal-line-2 {
+    width: 320px; /* Set to an absolute value */
+    height: 4px;
     background-color: #02214C;
-    transform:translate(0px,-120px);
+    transform: translate(0, -120px);
 }
-
-
-
 
 .circle {
     width: 100px;
@@ -314,19 +360,21 @@ li {
     align-items: center;
     justify-content: center;
     margin-bottom: 13px;
-    z-index:5;
+    z-index: 5;
     box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.5);  
 }
 
 .vertical-line {
     width: 4px;
-    height: calc(100% - 135px); /* Adjust based on total height of the diagram */
+    height: calc(100% - 140px); /* Adjust based on total height of the diagram */
     background-color: #02214C;
-    transform:translate(0px,0);
+    transform: translate(0px, 0);
 }
-.circle-label{
-    font-family:'Gotham Black'
+
+.circle-label {
+    font-family: 'Gotham Black';
 }
+
 
 .colab-structure-section-2 {
     display: flex;
@@ -344,6 +392,8 @@ li {
 .section-2-content{
     align-items:center;
     justify-content:center;
+    margin-right:80px;
+    margin-left:80px;
 
 }
 
@@ -401,7 +451,3 @@ li {
 }
 
 
-
-.top-row {
-    margin-right: 100px;
-}
