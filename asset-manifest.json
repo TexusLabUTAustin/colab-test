@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/colab-test/static/css/main.934a3a83.css",
-    "main.js": "/colab-test/static/js/main.d43128ae.js",
-    "static/js/453.219943e3.chunk.js": "/colab-test/static/js/453.219943e3.chunk.js",
-    "index.html": "/colab-test/index.html",
-    "main.934a3a83.css.map": "/colab-test/static/css/main.934a3a83.css.map",
-    "main.d43128ae.js.map": "/colab-test/static/js/main.d43128ae.js.map",
-    "453.219943e3.chunk.js.map": "/colab-test/static/js/453.219943e3.chunk.js.map"
+    "main.css": "/static/css/main.f8fdc6ac.css",
+    "main.js": "/static/js/main.d661053d.js",
+    "static/js/453.219943e3.chunk.js": "/static/js/453.219943e3.chunk.js",
+    "index.html": "/index.html",
+    "main.f8fdc6ac.css.map": "/static/css/main.f8fdc6ac.css.map",
+    "main.d661053d.js.map": "/static/js/main.d661053d.js.map",
+    "453.219943e3.chunk.js.map": "/static/js/453.219943e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.934a3a83.css",
-    "static/js/main.d43128ae.js"
+    "static/css/main.f8fdc6ac.css",
+    "static/js/main.d661053d.js"
   ]
 }
