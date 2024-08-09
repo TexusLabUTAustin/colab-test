@@ -5,6 +5,7 @@ import './App.css'; // Assuming you have some general styles for your app
 import About from './Components/Pages/About';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
+import Contact from './Components/Pages/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<CoLab />}/>
           <Route path="/about" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
           {/* Add more Route components here for other pages */}
         </Routes>
         <Footer />

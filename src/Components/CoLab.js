@@ -51,12 +51,31 @@ const CoLab = () => {
 
              <img src={`${process.env.PUBLIC_URL}/images/seal.svg`} className="ut-seal"/>
             </div>
+
             
              <div className="scroll-down-box">
                 <a href="#target-section">
             <img src={`${process.env.PUBLIC_URL}/images/scroll-down.svg`} className="scroll-down"/>
             </a>
             </div>
+
+            <div className="button-grid">
+        
+            <a href={`${process.env.PUBLIC_URL}/pdf/colab_overview.pdf`} className="pdf-button">
+            <div className="pdf-button-content">Colab Overview</div>
+        </a>
+        <a href={`${process.env.PUBLIC_URL}/pdf/Climate_report.pdf`} className="pdf-button">
+            <div className="pdf-button-content">Austin Future Climate Report 2024</div>
+        </a>
+        <a href={`${process.env.PUBLIC_URL}/pdf/seasonal_outlook.pdf`} className="pdf-button">
+            <div className="pdf-button-content">Austin Summer Outlook</div>
+        </a>
+        <a href={`${process.env.PUBLIC_URL}/pdf/heat_playbook.pdf`} className="pdf-button">
+            <div className="pdf-button-content">Heat Resilience Playbook</div>
+        </a>
+       
+    </div>
+
 
              
         </div>

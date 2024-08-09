@@ -32,6 +32,9 @@ const Navbar = () => {
                 <li className="nav-item">
                     <Link to="/projects" onClick={toggleNavbar}>Projects</Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
+                </li>
                 {/*
                 <li className="nav-item dropdown" onClick={toggleDropdown}>
                     More
