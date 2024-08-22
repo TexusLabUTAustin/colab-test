@@ -6,6 +6,7 @@ import About from './Components/Pages/About';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
 import Contact from './Components/Pages/Contact';
+import Maintenance from './Components/Maintenance';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<CoLab />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Contact />}/>
+          <Route path="/projects" element={<Maintenance />}/>
           {/* Add more Route components here for other pages */}
         </Routes>
         <Footer />

@@ -14,6 +14,7 @@
     padding: 10px 220px;
     background-color: #fff; 
     border-bottom: 1px solid #ddd; 
+    width:100vw;
 }
 
 .navbar-logo-tmp img {
