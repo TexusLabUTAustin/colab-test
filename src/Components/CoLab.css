@@ -91,7 +91,6 @@ display:flex;
 }
 
 
-
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
@@ -416,179 +415,143 @@ font-family: "Gotham Book";
 
 .timeline-container{
 }
-@media screen and (max-width: 768px) {
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
 
-    /* Header and Image Section */
+    /* Adjusting the header */
     .colab-header {
-        height: 100vh; /* Reduced height */
+        height: 50vh;
     }
 
-     .top-image { 
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-}
-
-    .overlay {
-        left: 10px;
-        top:15vh;
-        width: 95vw; /* Adjusted for smaller width */
+    .scroll-down-box{
+        display:none;
     }
 
-    .overlay h1 {
-        font-size: 3rem; /* Smaller font size */
-    }
-
-    .coa-logo  {
-        top: 30vh;
-        left: 10px; /* Align to the left */
-        height: 70px; /* Smaller logos */
-    }
-
-    .ut-seal{
-        top: 30vh;
-        left: 90px; /* Align to the left */
-        height: 70px;
-
-    }
-
-    /* Problems to Solve Section */
-    .Problems {
-        margin-top:20px;
-        flex-direction: column; /* Stack elements vertically */
-    }
-
-    .Problems h1{
-        text-align:center;
-        font-size:2.2rem;
-}
-
-
-    .blob-section {
-        flex-direction: column;
-        margin: 10px auto;
-    }
-
-    .blob {
-        border-radius: 4%;      /* Creates the circular shape */
-        width: 90vw;
-        height: auto; /* Adjust height automatically */
-        margin: 5px; /* Smaller margin */
-        font-size:1rem;
-    }
-
-    /* Urgency Section */
-    .urgency {
-        flex-direction: column; /* Stack elements vertically */
-        margin-bottom:50px;
-    }
-
-    .group-pic {
-        width: 100%; /* Full width */
-        height: auto; /* Adjust height automatically */
-    }
-
-    .urgency-text {
+    .top-banner {
+        height: 80px;
+        justify-content: flex-start;
         padding-left: 10px;
     }
 
-    .urgency-title {
-        font-size: 2.5rem; /* Smaller font size */
+    .colab-logo {
+        height: 80px;
+    }
+
+    .overlay{
+        left:0;
+        top:120px;
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+        margin:0;
+    }
+
+    .top-image {
+        height: calc(50vh - 80px);
+    }
+
+    /* Adjusting Introduction section */
+    .intro-container {
+        flex-direction: column;
+        padding: 40px 10px;
+        height:auto;
+    }
+
+    .intro-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-content {
+        max-width: 90vw;
+        font-size: 1rem;
+    }
+
+    /* Adjusting Problems section */
+    .Problems h1 {
+        font-size: 2.5rem;
+        padding: 40px 20px;
+    }
+
+    .blob-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blob {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Adjusting Urgency section */
+    .urgency {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .urgency-title h1 {
+        font-size: 3rem;
+        padding: 40px 20px;
     }
 
     .urgency-content {
-        font-size: 1rem; /* Smaller font size */
+        max-width: 90vw;
+        font-size: 1.1rem;
     }
 
-    /* Focus Section */
-    .focus {
-        flex-direction: column; /* Stack elements vertically */
+    .urgency-content ul {
+        padding-top: 20px;
     }
 
-    .focus-box {
-        width: 100%; /* Full width */
+    .urgency-content li {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-size: 1rem;
     }
 
-    .focus-title{
-        font-size:2.2rem;
-        margin-bottom:20px;
-    }
-    .focus-content{
-        font-size:1.1rem;
+    /* Adjusting Quote section */
+    .quote {
+        height: 50vh;
     }
 
-    /* Ongoing Section */
-    .colab-ongoing {
-        flex-direction: column; /* Stack elements vertically */
-        background-image:none !important;
-
+    .quote img {
+        height: 50vh;
     }
 
-
-
-    .colab-ongoing-card {
-        width: 90vw; /* Adjusted for smaller width */
-        height:auto;
-        margin: 3vh 0;
-        
+    .centered-text {
+        font-size: 1.8rem;
+        width: 80vw;
     }
 
-
-
-    .colab-section p{
-        margin-top: 20px;
-        
-    }
-    
-    .colab-ongoing-card img{
-        
-    }
-
-    /* Structure Section */
+    /* Adjusting Structure section */
     .colab-structure-section {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column;
     }
 
     .colab-structure-section-1 {
-        width: 90vw; /* Adjusted for smaller width */
-        padding-bottom: 30px;
-        border-bottom: 1px solid grey;
-        max-width:100%;
+        max-width: 90%;
+        margin: 20px 0;
     }
 
-    .headshot-row {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        grid-template-rows: auto auto; /* Two rows */
-        justify-items: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
-    }
-
-    .headshot-row img {
-        width: 90px; /* Adjust size as needed */
-        height: 90px; /* Adjust size as needed */
-    }
-
-    /* Styling for the single headshot that appears on the second row */
-    .headshot-row .single {
-        grid-column: 1 / -1; /* Stretch across all columns */
-        justify-self: center;
-    }
-
-    /* Progress Section */
+    /* Adjusting Next Steps section */
     .colab-progress {
-        height: auto; /* Adjust height automatically */
+        padding: 20px 10px;
     }
-    .colab-progress-title{
-        font-size:2.2rem;
+
+    .colab-progress-title {
+        font-size: 2.5rem;
     }
-    .next-steps-list{
-        font-size:1.1rem;
+
+    .next-steps-list {
+        padding-left: 20px;
+        font-size: 1.1rem;
     }
 
     .timeline {
         margin-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 40px;
     }
 }
 
@@ -647,6 +610,7 @@ font-family: "Gotham Book";
     max-width: 100%;
     flex-direction:row;
 }
+
 
     .headshot-row {
         display: grid;

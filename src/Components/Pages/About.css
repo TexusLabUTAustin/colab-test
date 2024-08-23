@@ -452,3 +452,159 @@ li {
 }
 
 
+/* Mobile Styles */
+/* Mobile Styles */
+/* Mobile Styles */
+/* Mobile Styles */
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar-tmp {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-logo-tmp img {
+        height: 50px;
+    }
+
+    .navbar-buttons-tmp {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-button-tmp {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Focus Header */
+    .focus-header {
+        padding: 20px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .focus-header-text {
+        padding-left: 20px;
+        font-size: 1.5rem;
+    }
+
+    /* Focus Section */
+    .focus-section {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .focus-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .ut-focus-box, .city-focus-box {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /* Ongoing Section */
+    .colab-ongoing {
+        padding: 20px;
+    }
+
+    .ongoing-header {
+        padding: 20px 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .ongoing-cards {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        padding: 10px 0;
+        margin: 0 auto;
+        background-color: #02214C;
+    }
+    .colab-section{
+        display:block;
+        transform:translate(0,0);
+    }
+
+    .colab-ongoing-card {
+        width: 150px;
+        height: auto;
+        padding: 10px;
+        margin-right: 10px; /* Add space between cards */
+        border: none; /* Remove borders */
+        flex-shrink: 0; /* Prevent shrinking */
+    }
+
+    .colab-ongoing-card p {
+        height: auto;
+        font-size: 0.8rem;
+    }
+
+    .circle-symbol, .colab-ongoing-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Diagram */
+    .diagram-container {
+        margin-top: 20px;
+        display:none;
+    }
+
+    .diagram-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .diagram {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .top-level, .bottom-level {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horizontal-line-1, .horizontal-line-2, 
+    .vertical-line-2, .vertical-line {
+        display: none; /* Remove horizontal and vertical lines */
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    /* Structure Section */
+    .colab-structure-section-2 {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .section-2-content {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    /* Headshots */
+    .headshot-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot-row img {
+        width: 60px;
+        height: 60px;
+    }
+}

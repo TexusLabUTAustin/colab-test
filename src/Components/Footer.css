@@ -1,47 +1,60 @@
-
-
 .footer-container{
     display:flex;
     flex-direction:column;
     height:400px;
     align-items:center;
-    background-color:#E8EBEF
-
+    background-color:#E8EBEF;
+    padding: 20px; /* Add padding for better spacing on mobile */
 }
-
 
 .footer-title-container{
     justify-content:center;
     text-align:center;
-    padding:80px;
-    padding-bottom:40px;
+    padding: 40px 20px; /* Reduce padding for smaller screens */
+    padding-bottom:20px;
 }
 
 .footer-title{
-    font-size:2.5rem;
-
+    font-size:2rem; /* Adjust font size for mobile */
 }
 
 .footer-links{
-    
     text-decoration:none;
-    width:min(100%, 1200px);
+    width:100%; /* Ensure full width on smaller screens */
+    max-width:1200px;
     display:flex;
-    justify-content:space-between;
-    
+    flex-direction:column; /* Stack links vertically on mobile */
+    align-items:center;
+    gap: 20px; /* Add spacing between links */
 }
 
 .footer-links a{
     text-decoration:none;
     font-family:'Gotham Book';
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjust font size for mobile */
     text-align:center;
     color: #02214C;
-    
-    
+    padding: 10px 0; /* Add padding for touch targets */
 }
 
 .footer-logo{
-    height:100px;
-    margin-bottom:50px;
+    height:80px; /* Reduce logo size for mobile */
+    margin-bottom:30px; /* Adjust margin for better spacing on mobile */
+}
+
+/* Media Query for smaller screens */
+@media (min-width: 600px) {
+    .footer-links {
+        flex-direction:row; /* Change back to row layout for wider screens */
+        justify-content:space-between;
+    }
+
+    .footer-title{
+        font-size:2.5rem; /* Restore font size for larger screens */
+    }
+
+    .footer-logo{
+        height:100px; /* Restore logo size for larger screens */
+        margin-bottom:50px;
+    }
 }
