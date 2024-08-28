@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Contact.css';
+import Navbar from '../Navbar'; // Import the Navbar component
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -23,24 +24,7 @@ const Contact = () => {
 
     return (
         <div className="Contact">
-            <div className="navbar-tmp">
-                <div className="navbar-logo-tmp">
-                    <Link to="/">
-                        <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" />
-                    </Link>
-                </div>
-                <div className="navbar-buttons-tmp">
-                    <Link to="/about">
-                        <button className="navbar-button-tmp">About</button>
-                    </Link>
-                    <Link to="/projects">
-                        <button className="navbar-button-tmp">Projects</button>
-                    </Link>
-                    <Link to="/contact">
-                        <button className="navbar-button-tmp">Contact</button>
-                    </Link>
-                </div>
-            </div>
+            <Navbar /> {/* Add the Navbar component */}
 
             <div className="contact-form-container">
                 <h2>Contact Us</h2>

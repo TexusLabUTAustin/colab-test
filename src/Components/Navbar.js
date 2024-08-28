@@ -1,34 +1,27 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
-    const navigate = useNavigate();
-
-    const toggleNavbar = () => {
-        setNavbarOpen(!navbarOpen);
-    };
-
-    const handleNavigation = (path) => {
-        navigate(path);
-        setNavbarOpen(false);
-    };
-
     return (
-        <nav className="navbar">
-            <div className="navbar-header">
-                <button className="navbar-toggle" onClick={toggleNavbar}>
-                    ☰
-                </button>
+        <div className="navbar">
+            <div className="navbar-logo">
+                <Link to="/">
+                    <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" />
+                </Link>
             </div>
-            <div className={`navbar-links ${navbarOpen ? 'show' : ''}`}>
-                <button className="nav-button" onClick={() => handleNavigation('/')}>Home</button>
-                <button className="nav-button" onClick={() => handleNavigation('/about')}>About</button>
-                <button className="nav-button" onClick={() => handleNavigation('/projects')}>Projects</button>
-                <button className="nav-button" onClick={() => handleNavigation('/contact')}>Contact</button>
+            <div className="navbar-buttons">
+                <Link to="/about">
+                    <button className="navbar-button">About</button>
+                </Link>
+                <Link to="/projects">
+                    <button className="navbar-button">Projects</button>
+                </Link>
+                <Link to="/contact">
+                    <button className="navbar-button">Contact</button>
+                </Link>
             </div>
-        </nav>
+        </div>
     );
 };
 

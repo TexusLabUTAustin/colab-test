@@ -2,7 +2,7 @@ import React from 'react';
 import "./CoLab.css";
 import Timeline from './Timeline';
 import { Helmet } from 'react-helmet';
-import Navbar from './Navbar';
+import NavbarHero from './NavbarHero';
 
 
 
@@ -40,7 +40,7 @@ const CoLab = () => {
 
 
         <div className="colab-header">
-        <Navbar />
+        <NavbarHero />
             <div className="top-banner">
                 <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} className="colab-logo"/>
             </div>
