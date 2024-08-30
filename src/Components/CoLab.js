@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./CoLab.css";
 import Timeline from './Timeline';
 import { Helmet } from 'react-helmet';
 import NavbarHero from './NavbarHero';
+import Navbar from './Navbar'
 
 
 
@@ -16,16 +17,21 @@ const timelineEvents = [
 ];
 
 const CoLab = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-    
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div className="colab-main">
         <Helmet>
-        <title>UT City Co-Lab</title>
+        <title>UT City CoLab</title>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://texuslab.org/colab" />
-        <meta property="og:title" content="UT City Co-Lab" />
+        <meta property="og:title" content="UT City CoLab" />
         <meta property="og:description" content="Connecting climate data to Community + City decision making" />
         <meta property="og:image" content="https://texuslab.org/images/seal.svg" />
         
@@ -37,16 +43,12 @@ const CoLab = () => {
 {/* ------------------------------------------------------------------------------------------*/}
 {/* Header  */}
 
-
-
         <div className="colab-header">
-        <NavbarHero />
-            <div className="top-banner">
-                <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} className="colab-logo"/>
-            </div>
+        {isMobile ? <NavbarHero /> : <Navbar />}
+            
             <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="overlay">
-                <h1>UT-City Climate Co-Lab</h1>
+                <h1>UT-City Climate CoLab</h1>
 
             </div>
 
@@ -73,7 +75,7 @@ const CoLab = () => {
         <h1>What is <br/>the <span style={{ color: '#B25321' }}>CoLab?</span></h1>
     </div>
     <div className="intro-content">
-        <p>The UT City & Climate Co-Lab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
+        <p>The UT City & Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
 
     </div>
     </div>
