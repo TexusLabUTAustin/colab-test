@@ -1,0 +1,19 @@
+.card-grid {
+    margin-top: 8.28vh;
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+    flex-direction: column;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .card-grid {
+    margin-top: 5.28vh;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center; */
+  }
+  
+  }

@@ -28,32 +28,33 @@
 
 .overlay{
 position:absolute;
-left:200px;
-bottom: 250px;
+padding:50px 10px 10px 180px;
 background: rgba(255,255,255,.0);
 height: 50vh;
-width: 80vw;
+width: 50vw;
 display:flex;
 }
 
 .overlay h1{
     color: #02214C;
-    font-size: 5rem;
+    font-size: 2.6rem;
     bottom:0;
     display:flex-end;
     margin-bottom: 0;
     line-height:1.2;
-    font-family:"Gotham Black"
+    font-family:"Gotham"
 }
 
 
  .top-image { 
     position: absolute;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     width: 100vw;
     object-fit: cover;
     opacity:0.9;
     background-color:#E8EBEF;
+    transform: translateY(-10%) scale(1.5);
+    height:78%;
     
 }
 
@@ -129,7 +130,7 @@ display:flex;
     
 }
 .intro-title h1{
-    font-size:3.5rem;
+    font-size:3rem;
     
 }
 
@@ -140,7 +141,7 @@ display:flex;
 
 .intro-content p{
     font-family:"Gotham Book";
-    font-size:1.2rem;
+    font-size:1rem;
     max-width:600px;
     
         font-weight:600;
@@ -154,7 +155,7 @@ display:flex;
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
-/* Problems to Solve */
+/* ems to Solve */
 
 .Problems{
     display: flex;
@@ -168,7 +169,7 @@ display:flex;
 }
 .Problems h1{
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 2.6rem;
     margin: 0 0; /* top 0 horizontally center */
     padding:80px;
     padding-bottom:40px;
@@ -218,7 +219,7 @@ display:flex;
 .blob p{
 font-family: "Gotham Book";
   color:#02214C;
-  font-size:1.1rem;
+  font-size:1rem;
 
 }
 
@@ -240,11 +241,11 @@ font-family: "Gotham Book";
 }
 
 .urgency-title h1{
-    font-size:4rem;
-    padding:0;
-    margin:0;
-    padding:80px;
-    padding-left:160px;
+    font-size: 2.6rem;
+    padding: 0;
+    margin: 0;
+    padding: 80px;
+    padding-left: 180px;
 }
 
 .urgency-content{
@@ -313,7 +314,7 @@ font-family: "Gotham Book";
   z-index: 2; /* Ensures the text is above the mask */
   font-weight:normal;
   font-weight:1000;
-  font-size:2.4rem;
+  font-size:2rem;
   width:1000px;
 }
 
@@ -440,15 +441,20 @@ font-family: "Gotham Book";
     .overlay{
         left:0;
         top:30px;
+        padding: 20px 20px 20px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 67vw;
+        height: auto;
     }
 
     .overlay h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin:0;
+        color: white;
     }
 
     .top-image {
-        height: calc(50vh - 80px);
+        height: calc(50vh - 60px);
     }
 
     /* Adjusting Introduction section */
@@ -459,7 +465,7 @@ font-family: "Gotham Book";
     }
 
     .intro-title h1 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 
     .intro-content {

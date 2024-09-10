@@ -2,14 +2,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 220px;
+    padding: 10px 180px;
     background-color: #fff; 
     border-bottom: 1px solid #ddd; 
     width:100vw;
+    position: relative;
+    z-index: 5;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .navbar-logo img {
     height: 80px; /* Adjust the logo size as needed */
+}
+
+.navbar-logo p{
+    font-family: "Gotham Black";
 }
 
 .navbar-buttons {
@@ -17,6 +29,8 @@
 }
 
 .navbar-button {
+    font-family: 'Gotham Book';
+    font-size: 16px;
     margin-left: 10px; /* Space between buttons */
     padding: 10px 20px;
     color: #02214C; /* Button text color */

@@ -48,7 +48,7 @@ const CoLab = () => {
             
             <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="overlay">
-                <h1>UT-City Climate CoLab</h1>
+                <h1>Empower city departments and the community with climate data and tools</h1>
 
             </div>
 
@@ -157,7 +157,7 @@ const CoLab = () => {
             <p className="centered-text">"Cities have the capability of providing something 
                                             for everybody, only because, and only when, 
                                                  they are created by everybody."<br/> <br/>
-                                                <span style={{ fontSize:"2rem", fontWeight: 900, fontFamily:"Gotham Book" }}>-Jane Jacobs</span> </p>
+                                                <span style={{ fontSize:"1.8rem", fontWeight: 900, fontFamily:"Gotham Book" }}>-Jane Jacobs</span> </p>
         </div>
 
         

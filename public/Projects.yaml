@@ -1,0 +1,17 @@
+- title: Austin Future Climate Report 2024
+  targetSection: austin-future-climate-report
+  shortContent: Discover the Austin Future Climate Report 2024—our latest insights on how rising temperatures and shifting weather patterns will shape Austin’s climate. Explore future scenarios, impacts, and strategies for building a resilient city.
+  pictureSrc: climate_report.png
+  reportName: Climate_report.pdf
+
+- title: Austin Summer Outlook
+  targetSection: austin-summer-outlook
+  shortContent: The Austin Summer Outlook 2024 provides a forecast of expected summer weather patterns, including anticipated heatwaves, temperature trends, and potential impacts on the community. This report helps residents and officials prepare for extreme heat and manage associated risks.
+  pictureSrc: city_view.jpg
+  reportName: seasonal_outlook.pdf
+
+- title: Heat Resilience Playbook
+  targetSection: heat-resilience-playbook
+  shortContent: The Austin Heat Resilience Playbook provides strategies and actions to combat extreme heat, focusing on community preparedness and infrastructure improvements to enhance the city's resilience.
+  pictureSrc: LadyBirdLake.jpg
+  reportName: heat_playbook.pdf

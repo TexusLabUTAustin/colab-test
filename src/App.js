@@ -6,7 +6,7 @@ import About from './Components/Pages/About';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
 import Contact from './Components/Pages/Contact';
-import Maintenance from './Components/Maintenance';
+import Maintenance from './Components/Pages/Maintenance';
 import NavbarHero from './Components/NavbarHero';
 
 function App() {
