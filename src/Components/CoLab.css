@@ -477,7 +477,7 @@ font-family: "Gotham Book";
     }
 
     .top-image {
-        height: calc(50vh - 230px);
+        height: 35vh;
     }
 
     /* Adjusting Introduction section */
