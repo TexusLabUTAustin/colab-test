@@ -33,6 +33,7 @@ background: rgba(255,255,255,.0);
 height: 50vh;
 width: 50vw;
 display:flex;
+flex-direction: column;
 }
 
 .overlay h1{
@@ -49,12 +50,12 @@ display:flex;
  .top-image { 
     position: absolute;
     /* height: calc(100vh - 100px); */
-    width: 100vw;
+    width: 80vw;
     object-fit: cover;
     opacity:0.9;
     background-color:#E8EBEF;
     transform: translateY(-10%) scale(1.5);
-    height:78%;
+    height:76%;
     
 }
 
@@ -178,32 +179,41 @@ display:flex;
 
 }
 
+.Problems h2{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0;
+    padding-bottom: 20px;
+    max-width: 1200px;
+}
+
 .blob-section {
     display: flex;
-    flex-direction: row;
     margin: 0px auto;
     margin-bottom:60px;
     max-width:100vw;
     overflow-x:auto;
-
+    flex-wrap: wrap;
+    padding: 20px 150px 20px 180px;
+    gap: 50px 0px;
 }
 
 
 .blob {
- flex-direction:column;
-  border-radius: 0 50px 0 50px; /* Top left, top right, bottom right, bottom left */
-  width: 250px;            /* Width of the blob */
-  height: 330px;           /* Height of the blob */
-  display: flex;           /* Enables flexbox for centering content */
-  align-items: left;     /* Centers content vertically */
-  justify-content: left; /* Centers content horizontally */
-  margin: 20px;
-  margin-top:0px;            /* Margin around each blob */
-  text-align: left;      /* Aligns text inside the blob */
-  padding: 40px;           /* Padding inside the blob */
-  background-color: #E8EBEF; /* Default background color of the blob */
   overflow:auto;
+  display: flex;
+  flex: 50% 1;
+  flex-direction: column;
+  padding: 10px;
+  flex-direction: row;
+}
 
+.blob-icon {
+    padding-right: 20px;
+}
+
+.blob-icon img{
+    width:70px;
 }
 
 .blob h1{
@@ -216,9 +226,9 @@ display:flex;
     overflow:hidden;
 
 }
-.blob p{
+.blob-section p{
 font-family: "Gotham Book";
-  color:#02214C;
+  color:white;
   font-size:1rem;
 
 }
@@ -244,7 +254,7 @@ font-family: "Gotham Book";
     font-size: 2.6rem;
     padding: 0;
     margin: 0;
-    padding: 80px;
+    padding: 130px;
     padding-left: 180px;
 }
 
@@ -416,6 +426,17 @@ font-family: "Gotham Book";
 
 .timeline-container{
 }
+
+.headerlogo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.headerlogo img{
+    width:5vw
+}
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
 
@@ -442,9 +463,11 @@ font-family: "Gotham Book";
         left:0;
         top:30px;
         padding: 20px 20px 20px 20px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.4);
         width: 67vw;
         height: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .overlay h1 {
@@ -454,7 +477,7 @@ font-family: "Gotham Book";
     }
 
     .top-image {
-        height: calc(50vh - 60px);
+        height: calc(50vh - 230px);
     }
 
     /* Adjusting Introduction section */
@@ -462,10 +485,11 @@ font-family: "Gotham Book";
         flex-direction: column;
         padding: 40px 10px;
         height:auto;
+        gap: 20px;
     }
 
     .intro-title h1 {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 
     .intro-content {
@@ -475,13 +499,17 @@ font-family: "Gotham Book";
 
     /* Adjusting Problems section */
     .Problems h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 40px 20px;
     }
 
+    .Problems h2 {
+        font-size: 1.5rem;
+    }
     .blob-section {
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
 
     .blob {
@@ -497,8 +525,8 @@ font-family: "Gotham Book";
     }
 
     .urgency-title h1 {
-        font-size: 3rem;
-        padding: 40px 20px;
+        font-size: 2rem;
+        padding: 20px;
     }
 
     .urgency-content {
@@ -526,7 +554,7 @@ font-family: "Gotham Book";
     }
 
     .centered-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         width: 80vw;
     }
 
@@ -558,6 +586,10 @@ font-family: "Gotham Book";
         margin-top: 20px;
         padding-left: 10px;
         padding-bottom: 40px;
+    }
+
+    .headerlogo img{
+        width:15vw
     }
 }
 

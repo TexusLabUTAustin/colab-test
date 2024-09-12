@@ -49,7 +49,10 @@ const CoLab = () => {
             <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="overlay">
                 <h1>Empower city departments and the community with climate data and tools</h1>
-
+                <div class="headerlogo">
+                <img src={`${process.env.PUBLIC_URL}/images/cityofaustin_logo.png`}/>
+                <img src={`${process.env.PUBLIC_URL}/images/ut_logo.png`}/>
+                </div>
             </div>
 
             
@@ -92,31 +95,43 @@ const CoLab = () => {
             <h1>Problems to Solve</h1>
             <div className="blob-section"> 
             <div className="blob">
-                <h1>Data Support</h1>
+                <div class="blob-icon">
+                <img src={`${process.env.PUBLIC_URL}/images/Data_problems.png`}/>
+                </div>
+                <div>
+                <h2>Data Support</h2>
                 <p>Fills a void of directly supporting City climate data needs.</p>
-                
+                </div>
             </div>
             <div className="blob">
-                <h1>Department Connectivity</h1>
+            <div class="blob-icon">
+                <img src={`${process.env.PUBLIC_URL}/images/Connectivity.png`}/>
+                </div>
+                <div>
+                <h2>Department Connectivity</h2>
                 <p>City data needs vary across departments. Data need to be connected to city department decision making.</p>
-                
+                </div>
             </div>
-
              <div className="blob">
-                <h1>Accessibility</h1>
+             <div class="blob-icon">
+                <img src={`${process.env.PUBLIC_URL}/images/Accessability.png`}/>
+                </div>
+                <div>
+                <h2>Accessibility</h2>
                 <p>Specific data and models are often confusing for community and staff. The goal is to make research accessible to all.</p>
-                
+                </div>
             </div>
 
           <div className="blob">    
-                <h1>Stakeholder Partnerships</h1>
-                <p>UT/ City climate research projects need stakeholder partnerships to be successful.</p>
-                
-          </div>
-           
-           
-            </div>
-                
+          <div class="blob-icon">
+                <img src={`${process.env.PUBLIC_URL}/images/Partnerships.png`}/>
+                </div>
+                <div>
+                <h2>Stakeholder Partnerships</h2>
+                <p>UT/ City climate research projects need stakeholder partnerships to be successful.</p> 
+                </div>
+          </div> 
+            </div>               
          </div>
 
 

@@ -52,7 +52,9 @@ const About = () => {
 
                         <div className="colab-ongoing-card">         {/* Copy  */}
                         <div className="colab-section">
-                            <div className="circle-symbol"> </div>
+                            <div className="circle-symbol"> 
+                            <img src={`${process.env.PUBLIC_URL}/images/Climate.png`}/>
+                            </div>
                             <h1 className="ongoing-title">CLIMATE ASSESSMENTS</h1>   
                             <p>Climate trends, patterns, changes, event summaries <br /> <br /> Case studies for high impact events. <br /> <br /> Future Projections </p>
                             </div>
@@ -61,7 +63,9 @@ const About = () => {
 
                         <div className="colab-ongoing-card">
                             <div className="colab-section">
-                                <div className="circle-symbol"> </div>
+                                <div className="circle-symbol"> 
+                                <img src={`${process.env.PUBLIC_URL}/images/Calendar.png`}/>
+                                </div>
                                 <h1 className="ongoing-title">DECISION CALENDARS</h1>   
                                 <p>Work with City operations <br/> <br /> Document What climate information is needed, Who needs it, When, Why? <br /> <br /> How accurate, and How will it be used?</p>
                             </div>
@@ -69,7 +73,8 @@ const About = () => {
 
                         <div className="colab-ongoing-card">
                             <div className="colab-section">
-                                <div className="circle-symbol"> </div>
+                                <div className="circle-symbol">
+                                <img src={`${process.env.PUBLIC_URL}/images/Policy.png`}/> </div>
                                 <h1 className="ongoing-title">POLICY BRIEFS</h1>   
                                 <p>Map networks for outreach, programs, and community organizations links <br /> <br /> Connect climate modeling data products to social and policy science, social vulnerability </p>
                             </div>
@@ -78,7 +83,9 @@ const About = () => {
 
                         <div className="colab-ongoing-card">
                             <div className="colab-section">
-                                <div className="circle-symbol"> </div>
+                                <div className="circle-symbol"> 
+                                <img src={`${process.env.PUBLIC_URL}/images/City.png`}/>
+                                </div>
                                 <h1 className="ongoing-title">CITY WIDE DATA PRODUCTS</h1>   
                                 <p>High resolution data based on different department needs <br/> <br/> Local-scale climate products <br/> <br/> Combine Data + Lived Experience</p>
                             </div>
@@ -88,7 +95,9 @@ const About = () => {
 
                         <div className="colab-ongoing-card">
                             <div className="colab-section">
-                            <div className="circle-symbol"> </div>
+                            <div className="circle-symbol"> 
+                            <img src={`${process.env.PUBLIC_URL}/images/Data.png`}/>
+                            </div>
                                 <h1 className="ongoing-title">SYNTHESIS STUDIES</h1>   
                                 <p>Cool Pavement <br/> <br/> Fire, flood, hotspots <br/> <br/> If-then assessments for future city growth and climate <br/> <br/> Classroom and public education</p>
                             </div>
@@ -150,7 +159,7 @@ const About = () => {
 
 
                             <div className="colab-structure-section-2">
-                    <div className="section-2-content">
+                    <div className="section-2-content" style={{background:"aliceblue"}}>
                         <h1 className="headshots-title city">City Leadership</h1>
                         <div className="headshot-row top-row">
                             <div className="headshot">
@@ -167,7 +176,7 @@ const About = () => {
                         </div>
                     </div>
                     
-                    <div className="section-2-content">
+                    <div className="section-2-content" style={{background:"antiquewhite"}}>
                         <h1 className="headshots-title ut">UT Leadership</h1>
                         <div className="headshot-row bottom-row">
                             <div className="headshot">
