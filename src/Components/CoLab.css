@@ -102,9 +102,9 @@ flex-direction: column;
 .intro-container{
     display: flex;
     flex-direction:row;
-    height:350px;
+    height:fit-content;
     background-color:#E8EBEF;
-    
+    gap: 50px;
     align-items:stretch;
     padding:80px;
     padding-left:0px;
@@ -122,35 +122,30 @@ flex-direction: column;
 
 }
 
-
-
-.intro-title{
-    text-align:left;
+.intro-box {
     display:flex;
-    margin-right:160px;
-    
+    flex-direction: column;
+    gap: 20px;
 }
-.intro-title h1{
+
+.intro-box h1{
     font-size:3rem;
     
 }
 
-.intro-content{
-    max-width: 55vw;
-    display:flex;
-}
-
-.intro-content p{
+.intro-box p{
     font-family:"Gotham Book";
     font-size:1rem;
     max-width:600px;
     
         font-weight:600;
-
+    
 }
 
-
-
+.introcover img{
+    width: 35vw;
+    border: 8px solid steelblue;
+}
 
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
@@ -162,7 +157,11 @@ flex-direction: column;
     display: flex;
     height: auto;
     flex-direction:column;
-    background-color:#235831;
+    min-height: 100%;
+    background: url(/public/images/downtown-austin-skyline.jpg) rgb(35, 88, 49, 1);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: bottom;
     max-width:100vw;
     justify-content: center;
     align-items:left;
@@ -442,7 +441,7 @@ font-family: "Gotham Book";
 
     /* Adjusting the header */
     .colab-header {
-        height: 40vh;
+        height: 75vh;
     }
 
     .scroll-down-box{
@@ -477,7 +476,7 @@ font-family: "Gotham Book";
     }
 
     .top-image {
-        height: 35vh;
+        height: 65vh;
     }
 
     /* Adjusting Introduction section */
@@ -488,13 +487,17 @@ font-family: "Gotham Book";
         gap: 20px;
     }
 
-    .intro-title h1 {
+    .intro-box h1{
         font-size: 2rem;
     }
 
-    .intro-content {
+    .intro-box p{
         max-width: 90vw;
         font-size: 1rem;
+    }
+
+    .introcover img {
+        width: 70vw;
     }
 
     /* Adjusting Problems section */

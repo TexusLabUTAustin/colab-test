@@ -72,19 +72,28 @@ const CoLab = () => {
 {/* ------------------------------------------------------------------------------------------*/}
 {/* ------------------------------------------------------------------------------------------*/}
 {/* What is CoLab?  */}
-<div className="Introduction" id="target-section">
-    <div className="intro-container">
-    <div className="intro-title">
-        <h1>What is <br/>the <span style={{ color: '#B25321' }}>CoLab?</span></h1>
-    </div>
-    <div className="intro-content">
-        <p>The UT City & Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
+          <div className="Introduction" id="target-section">
+              <div className="intro-container">
+                  <div class="introcover">
+                      <img src={`${process.env.PUBLIC_URL}/images/intro-img.JPG`} />
+                  </div>
+                  <div class="intro-box">
+                      <div>
+                          <h1>What is <br />the <span style={{ color: '#B25321' }}>CoLab?</span></h1>
+                      </div>
+                      <div >
+                          <p>The UT City & Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
+                      </div>
+                      <div class="btn">
+                      <a href={`/about`} className="pdf-button" target="_blank" rel="noopener noreferrer">
+                          <div className="pdf-button-content">Learn More</div>
+                      </a>
+                  </div>
+                  </div>
+                 
+              </div>
 
-    </div>
-    </div>
-
-</div>
-
+          </div>
 
 {/* ------------------------------------------------------------------------------------------*/}
 {/* ------------------------------------------------------------------------------------------*/}
@@ -92,6 +101,8 @@ const CoLab = () => {
 {/* Problems  */}
 
         <div className="Problems" id="target-section">
+            {/* <img src={`${process.env.PUBLIC_URL}/images/intro-img.JPG`} alt="Background" className="prob-background" /> */}
+            <div class="problem-content">
             <h1>Problems to Solve</h1>
             <div className="blob-section"> 
             <div className="blob">
@@ -131,7 +142,8 @@ const CoLab = () => {
                 <p>UT/ City climate research projects need stakeholder partnerships to be successful.</p> 
                 </div>
           </div> 
-            </div>               
+            </div>  
+            </div>             
          </div>
 
 

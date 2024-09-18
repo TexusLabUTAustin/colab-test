@@ -29,10 +29,6 @@ function ProjectCardContent({ title, pictureSrc, content, reportName, buttonText
             <div className="pdf-button-content">View Full Report</div>
           </a>
       </div>
-      
-      {/* <div class="reportButton" role="button">
-        <button>View Full Report</button>
-      </div> */}
       </div>
       
           {/* </Link> */}
