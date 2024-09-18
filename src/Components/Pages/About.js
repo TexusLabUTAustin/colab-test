@@ -107,7 +107,7 @@ const About = () => {
 
                     </div>
                      <div className="diagram-container">
-                <h1 className="diagram-title">Co-Lab Structure</h1>
+                <h1 className="diagram-title">CoLab Structure</h1>
                 <div className="diagram">
                     <div className="top-level">
                         <div className="circle-container">

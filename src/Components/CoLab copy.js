@@ -21,10 +21,10 @@ const CoLab = () => {
   return (
     <div className="colab-main">
         <Helmet>
-        <title>UT City Co-Lab</title>
+        <title>UT City CoLab</title>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://texuslab.org/colab" />
-        <meta property="og:title" content="UT City Co-Lab" />
+        <meta property="og:title" content="UT City CoLab" />
         <meta property="og:description" content="Connecting climate data to Community + City decision making" />
         <meta property="og:image" content="https://texuslab.org/images/seal.svg" />
         
@@ -44,7 +44,7 @@ const CoLab = () => {
             </div>
             <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline.jpg`} className="top-image"/> 
             <div className="overlay">
-                <h1>UT City + Climate Co-Lab</h1>
+                <h1>UT City + Climate CoLab</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/coa.svg`} className="coa-logo"/>
 
              <img src={`${process.env.PUBLIC_URL}/images/seal.svg`} className="ut-seal"/>
@@ -69,7 +69,7 @@ const CoLab = () => {
         <h1>What is <br/>the <span style={{ color: '#B25321' }}>CoLab?</span></h1>
     </div>
     <div className="intro-content">
-        <p>The UT City & Climate Co-Lab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities</p>
+        <p>The UT City & Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities</p>
 
     </div>
     </div>
@@ -163,7 +163,7 @@ const CoLab = () => {
 {/* ------------------------------------------------------------------------------------------*/}
 {/* CoLab Structure  */}
         <div className="colab-structure">
-            <h1 className="structure-title">CO-LAB STRUCTURE</h1>
+            <h1 className="structure-title">COLAB STRUCTURE</h1>
 
             <div className="colab-structure-section">
                 <div className="colab-structure-section-1">
@@ -193,7 +193,7 @@ const CoLab = () => {
                     <li>Develop inventory of actioans taking place – resource database activities in climate mitigation & adaptation</li>
                     <li>Climate Decision Calendar – working with AFD, and other departments</li>
                     <li>Create a climate resilience, heat mapping/ mitigation tool kit</li>
-                    <li>Finalize Governance and Reporting Structure for Co-Lab</li>
+                    <li>Finalize Governance and Reporting Structure for CoLab</li>
                 </ul>
             </div>
 

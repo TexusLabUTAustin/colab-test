@@ -10,7 +10,7 @@ function Footer() {
             <Link to='/'>
             <img className="footer-logo" src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" />
             </Link>
-                <h1 className="footer-title">UT-City Climate Co-Lab</h1>
+                <h1 className="footer-title">UT-City Climate CoLab</h1>
             </div>
 
             <div className="footer-links">

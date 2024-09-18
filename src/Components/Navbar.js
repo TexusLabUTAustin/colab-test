@@ -8,7 +8,7 @@ const Navbar = () => {
             <div>
                 <Link to="/" className="navbar-logo">
                     <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" />
-                    <p>UT-City Climate Collab</p>
+                    <p>UT-City Climate CoLab</p>
                 </Link>
             </div>
             <div className="navbar-buttons">
