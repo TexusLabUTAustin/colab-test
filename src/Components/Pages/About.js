@@ -159,7 +159,7 @@ const About = () => {
 
 
                             <div className="colab-structure-section-2">
-                    <div className="section-2-content" style={{background:"aliceblue"}}>
+                    <div className="section-2-content" style={{background:"rgba(0, 151, 178, 0.2)", padding:"20px 35px"}}>
                         <h1 className="headshots-title city">City Leadership</h1>
                         <div className="headshot-row top-row">
                             <div className="headshot">

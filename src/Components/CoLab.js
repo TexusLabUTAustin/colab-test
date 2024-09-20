@@ -49,10 +49,6 @@ const CoLab = () => {
             <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="overlay">
                 <h1>Empower city departments and the community with climate data and tools</h1>
-                <div class="headerlogo">
-                <img src={`${process.env.PUBLIC_URL}/images/cityofaustin_logo.png`}/>
-                <img src={`${process.env.PUBLIC_URL}/images/ut_logo.png`}/>
-                </div>
             </div>
 
             

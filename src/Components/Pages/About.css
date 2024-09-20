@@ -208,7 +208,7 @@ li {
 }
 
 .colab-ongoing-card img {
-    width: 4vw;
+    width: 3vw;
     max-width: 100%; /* Ensures the image does not overflow the card width */
 }
 
@@ -359,7 +359,6 @@ li {
 .section-2-content{
     align-items:center;
     justify-content:center;
-    margin-right:80px;
     margin-left:80px;
     padding: 20px;
     border-radius: 20px;

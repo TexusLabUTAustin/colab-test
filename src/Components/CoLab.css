@@ -43,7 +43,7 @@ flex-direction: column;
     display:flex-end;
     margin-bottom: 0;
     line-height:1.2;
-    font-family:"Gotham"
+    font-family:"Gotham Book"
 }
 
 
@@ -441,7 +441,7 @@ font-family: "Gotham Book";
 
     /* Adjusting the header */
     .colab-header {
-        height: 75vh;
+        height: 65vh;
     }
 
     .scroll-down-box{
@@ -476,7 +476,7 @@ font-family: "Gotham Book";
     }
 
     .top-image {
-        height: 65vh;
+        height: 57vh;
     }
 
     /* Adjusting Introduction section */
