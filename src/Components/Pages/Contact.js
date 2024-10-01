@@ -23,43 +23,27 @@ const Contact = () => {
     };
 
     return (
-        <div className="Contact">
+        <div>
             <Navbar /> {/* Add the Navbar component */}
-
-            <div className="contact-form-container">
-                <h2>Contact Us</h2>
-                <form onSubmit={handleSubmit} className="contact-form">
-                    <label htmlFor="name">Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                    />
-
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                    />
-
-                    <label htmlFor="message">Message:</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
-
-                    <button type="submit" className="submit-button">Send Message</button>
-                </form>
+            <div className="header-banner">
+                <h1>Let's Connect!</h1>
+            </div>
+            <div class="info-container">
+                <div class="info-left">
+                    <div class="info-box">
+                        <h2 class="info-heading">Inquiries</h2>
+                        <p class="info-content"><strong>For any inquiries, questions, or commendations, please send us an email.</strong>
+                        <br /><br />Email: <a href="mailto:alex@abc.com">alexia.leclercq@utexas.edu</a></p>                    
+                        </div>
+                    <div class="info-box">
+                        <h2 class="info-heading">Mailing Location</h2>
+                        <p class="info-content"><strong>We are located in the Jackson School of Geosciences</strong>
+                        <br /><br />23 San Jacinto Blvd Austin, TX 78712</p>                    
+                    </div>
+                </div>
+                {/* <div class="info-img">
+                    <img src={`${process.env.PUBLIC_URL}/images/intro-img.JPG`} alt="Description of Image" class="contact-image" />
+                </div> */}
             </div>
         </div>
     );
