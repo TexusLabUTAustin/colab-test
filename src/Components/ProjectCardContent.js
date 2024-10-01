@@ -25,8 +25,8 @@ function ProjectCardContent({ title, pictureSrc, content, reportName, buttonText
       <h2>{title}</h2>
       <p>{content}</p>
       <div class="btn">
-      <a href={`${process.env.PUBLIC_URL}/pdf/${reportName}`} className="pdf-button" target="_blank" rel="noopener noreferrer">
-            <div className="pdf-button-content">View Full Report</div>
+      <a href={`/content/${targetSection}`} className="about-button">
+            <div className="about-button-content">View Project</div>
           </a>
       </div>
       </div>

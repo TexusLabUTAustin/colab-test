@@ -81,8 +81,8 @@ const CoLab = () => {
                           <p>The UT City & Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
                       </div>
                       <div class="btn">
-                      <a href={`/about`} className="pdf-button" target="_blank" rel="noopener noreferrer">
-                          <div className="pdf-button-content">Learn More</div>
+                      <a href={`/about`} className="about-button" target="_blank" rel="noopener noreferrer">
+                          <div className="about-button-content">Learn More</div>
                       </a>
                   </div>
                   </div>

@@ -596,6 +596,29 @@ font-family: "Gotham Book";
     }
 }
 
+.about-button {
+    background-color: #163374;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height: auto;
+    transition: 0.3s;
+    display: flex;
+    text-decoration: none;
+    padding: 20px;
+    font-family:'Helvetica';
+    width: fit-content;
+  }
+  .about-button:hover {
+    background-color: #0097B2;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  .about-button-content{
+    font-size: 16px;
+  }
+
 @media screen and (max-width:1278px) and (min-width:770px){
     .ut-seal, .coa-logo{
         top:350px;

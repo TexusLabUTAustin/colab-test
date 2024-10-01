@@ -1,6 +1,24 @@
 - title: Austin Future Climate Report 2024
   targetSection: austin-future-climate-report
-  shortContent: Discover the Austin Future Climate Report 2024—our latest insights on how rising temperatures and shifting weather patterns will shape Austin’s climate. Explore future scenarios, impacts, and strategies for building a resilient city.
+  shortContent: >-
+    Discover the Austin Future Climate Report 2024—our latest insights on how
+    rising temperatures and shifting weather patterns will shape Austin’s
+    climate. Explore future scenarios, impacts, and strategies for building a
+    resilient city.
+  longContent: >-
+    In Austin, climate change is expected to cause hotter summers with more
+    frequent heatwaves and fewer cold spells. Precipitation projections have
+    high uncertainty, but the rainfall amount is expected to remain relatively
+    unchanged. Austin is expected to experience more extremes, more variability
+    in climate, and slight increase in windy days (fewer calm days). These
+    projections are based on “high” and “business as usual” emission scenarios.
+    A “high” emission scenario refers to model projections where emissions from
+    human activities are expected to increase. A “business as usual” emission
+    scenario considers projections where emissions are considered to remain
+    status quo. For the projections, the output is based on medians, not
+    averages, and presented for near-future (2021–2040), midcentury (2041–2070)
+    and end of the century (2071–2100) epochs.
+  Collaborators: 'Office of Sustainability, Office of Resilience'
   pictureSrc: climate_reportcover.png
   reportName: Climate_report.pdf
 
@@ -13,5 +31,5 @@
 - title: Heat Resilience Playbook
   targetSection: heat-resilience-playbook
   shortContent: The Austin Heat Resilience Playbook provides strategies and actions to combat extreme heat, focusing on community preparedness and infrastructure improvements to enhance the city's resilience.
-  pictureSrc: LadyBirdLake.jpg
+  pictureSrc: heat_playbookcover.png
   reportName: heat_playbook.pdf
