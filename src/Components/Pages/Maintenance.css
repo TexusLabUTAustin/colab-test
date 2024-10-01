@@ -93,13 +93,13 @@ body, html {
 
 .cardsgrid{
   background: #f7f7f7;
-  width:100vw;
 }
 
 .header-title {
   height: auto;
     position: relative;
     z-index: 5;
+    right: 33%;
     padding-top: 4%;
 }
 .header-title h1{
