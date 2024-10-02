@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
             </div>
             <div class="info-img">
-                <img src={`${process.env.PUBLIC_URL}/images/contactImg.png`} alt="Description of Image" class="contact-image" />
+                <img src={`${process.env.PUBLIC_URL}/images/contactimg1.png`} alt="Description of Image" class="contact-image" />
             </div>
         </div>
     </div>

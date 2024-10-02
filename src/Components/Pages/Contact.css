@@ -33,7 +33,10 @@
 
 .info-img {
     flex: 1;
-    /* Right side takes equal space */}
+    /* Right side takes equal space */
+    margin-right: 60px;
+}
+    
 
 .info-box {
     padding: 20px 180px;
@@ -59,6 +62,7 @@
     /* Keeps the aspect ratio */
     border-radius: 5px;
     /* Optional: round the corners of the image */
+    width: 100%;
 }
 
 .contact-line {

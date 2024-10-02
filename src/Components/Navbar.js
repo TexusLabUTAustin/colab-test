@@ -5,11 +5,11 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div className="navbar">
-            <div className="navbar-logo">
-                <Link to="/">
+            <div>
+                <Link to="/" className="navbar-logo">
                     <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" />
-                </Link>
-                <p>UT-City Climate CoLab</p>
+                    <p>UT-City Climate CoLab</p>
+                </Link>  
             </div>
             <div className="navbar-buttons">
                 <Link to="/about">
