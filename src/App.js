@@ -67,7 +67,7 @@ function App() {
               <Route
                 key={index}
                 path={`/content/${project.targetSection}`}
-                element={<ProjectContentPage project={project} />}
+                element={<ProjectContentPage project={project} projectList={projects}/>}
               />
             );
           })}

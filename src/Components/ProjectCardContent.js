@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 
 function ProjectCardContent({ title, pictureSrc, content, reportName, buttonText, linkTo, targetSection }) {
 
-  console.log("PictureSec" + pictureSrc)
-
   const handleClick = () => {
     const section = document.getElementById(targetSection);
     if (section) {
@@ -17,7 +15,6 @@ function ProjectCardContent({ title, pictureSrc, content, reportName, buttonText
   return (
 
     <div className="cards">
-      {/* <Link to={`/content/${targetSection}`} className="card-link"> */}
       <div class="image-container">
       <img src={process.env.PUBLIC_URL+ "/images/" +  pictureSrc} alt={title} className="card-picture" />
       </div>
@@ -25,9 +22,11 @@ function ProjectCardContent({ title, pictureSrc, content, reportName, buttonText
       <h2>{title}</h2>
       <p>{content}</p>
       <div class="btn">
-      <a href={`/content/${targetSection}`} className="about-button">
+      <Link to={`/content/${targetSection}`} className="about-button">
+      {/* <a href={`/content/${targetSection}`} className="about-button"> */}
             <div className="about-button-content">View Project</div>
-          </a>
+          {/* </a> */}
+          </Link>
       </div>
       </div>
       

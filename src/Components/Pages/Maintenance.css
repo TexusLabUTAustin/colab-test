@@ -96,11 +96,8 @@ body, html {
 }
 
 .header-title {
-  height: auto;
-    position: relative;
-    z-index: 5;
-    right: 35%;
-    padding-top: 4%;
+  padding: 20px 180px;
+    text-align: center;
 }
 .header-title h1{
     color: #1c3583;
