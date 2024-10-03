@@ -2,9 +2,10 @@ import React from 'react';
 import './ProjectContentPage.css'; // Import the CSS file
 import { Link } from 'react-router-dom';
 import { collaboratorData } from './CollaboratorData';
+import Navbar from './Navbar';
 
 
-function ProjectContentPage({ project, projectList}) {
+function ProjectContentPage({ project, projectList }) {
   if (!project) {
     return <div>Project not found.</div>;
   }
@@ -13,13 +14,34 @@ function ProjectContentPage({ project, projectList}) {
 
 
   return (
-    <div className="content-page">
-      <img src={process.env.PUBLIC_URL + "/images/" + project.projectPictureSrc} alt={project.title} class="contentmain-img" />
-      <div className="content-text">
-        <h2>{project.title}</h2>
-        <h3>Abstract</h3>
-        <p className="Description">{project.longContent}</p><br /><br />
-        {/* <div class="btn">
+    <div>
+      <Navbar />
+      <div className="top-border"></div>
+      <div className="content-page">
+        <div className="contentimage-container">
+          <img
+            src={process.env.PUBLIC_URL + "/images/" + project.projectPictureSrc}
+            alt={project.title}
+            className="contentmain-img"
+          />
+          {project.reportName && (
+            <>
+              <div className="contentimage-overlay"></div> {/* Overlay div */}
+              <a
+                href={`${process.env.PUBLIC_URL}/pdf/${project.reportName}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-button"
+              >
+                View Report
+              </a>
+            </>
+          )}
+        </div>
+        <div className="content-text">
+          <h2>{project.title}</h2>
+          <p className="Description">{project.longContent}</p><br /><br />
+          {/* <div class="btn">
           <a href={`${process.env.PUBLIC_URL}/pdf/${project.reportName}`} className="pdf-button" target="_blank" rel="noopener noreferrer">
             <div className="about-button-content">View Full Report</div>
           </a>
@@ -52,13 +74,16 @@ function ProjectContentPage({ project, projectList}) {
             .filter(p => p.title !== project.title) // Exclude the current project
             .map((proj, index) => (
               <div className="project-card" key={index}>
-                <img src={process.env.PUBLIC_URL + "/images/" +proj.pictureSrc} alt={proj.title} />
-                <h3>{proj.title}</h3>
+                <Link to={`/content/${proj.targetSection}`} key={index}>
+                  <img src={process.env.PUBLIC_URL + "/images/" + proj.pictureSrc} alt={proj.title} />
+                  <h3>{proj.title}</h3>
+                </Link>
               </div>
             ))}
         </div>
       </div>
 
+      </div>
     </div>
 
   );

@@ -1,236 +1,181 @@
-/* ContentPage.css */
+.top-border {
+  width: 100%; /* Full width */
+  height: 1px; /* Border thickness */
+  background-color: #1C3583; /* Blue color */
+  margin-bottom: 20px; /* Space below the border, adjust as needed */
+}
 
 .content-page {
-  /* border-top: 1px solid #1C3583; */
-  max-width: 100vw;
-  margin: 1vh 2vw;
-  padding: 40px 20px;
+  max-width: 80vw;
+  margin: 1vh auto;
+  padding: 40px 30px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  }
-  
-  .content-page h2 {
-    display: flex;
-    font-size: 2.25rem;
-    text-align: left;
-    margin-bottom: 35px;
-    color: #1c3583;
-    font-family: "Gotham Book";
-    font-weight: bold;
-  }
-
-  .content-page h3{
-    color: #1c3583;
-    font-family: "Gotham Book";
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .contentmain-img {
-    max-width: 45%;
-    height: auto;
-    margin-bottom: 20px;
-    align-items: center;
-    object-fit: contain;
-    margin-right:50px;
-  
-  }
-  .content-text {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px; 
-    flex: 1;
-    margin-left: 140px;
-    min-width: 300px; 
-  }
-  
-  .Description {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-family: "Gotham Book";
-    text-align: left;
-    width: 43vw;
-  }
-  
-  .Names {
-    font-size: 1rem;
-    margin-top: auto;
-    font-family: "Gotham Book"
-  }
-  
-  .collabcard{
-    display: flex;
-    padding: 20px 0 20px 0;
-    justify-content: space-between;
-    max-width: 40%;
-  }
-  
-  .collabcard-content{
-    display: flex;
-    flex-direction: row;
-    width: 75px;
-    height: 70px;
-  }
-  
-  .collabcard-content p {
-    display: block;
-    margin-bottom: 5px;
-    text-decoration: none;
-    color: #0097B2;
-    font-weight: bold;
-    font-family: "Gotham Book";
-    padding-left: 15px;
-    font-size: 1vw;
-    align-self: center;
-  }
-
-  .collabcard-content img{
-    border: 1px solid black; /* Black border */
-    border-radius: 30px; /* Rounded corners */
-    padding: 10px; /* Space between the border and the image */
-  }
-
-  .collaborator-container {
-  border: 2px solid black; /* Black border */
-  background-color: white; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  padding: 10px; /* Space between the border and the image */
-  display: flex; /* Center the image and text */
-  flex-direction: column; /* Stack image and name vertically */
-  align-items: center; /* Center horizontally */
-  margin-bottom: 15px; /* Space between each collaborator */
 }
 
-.collab-image {
-  max-width: 100px; /* Adjust size as needed */
-  height: auto; /* Keeps the aspect ratio */
-  border-radius: 5px; /* Optional: round the corners of the image */
+.content-page h2,
+.content-page h3 {
+  color: #1c3583;
+  font-family: "Gotham Book";
+  font-weight: bold;
+  margin-bottom: 1rem; /* Ensure a proper margin */
 }
 
-  .collaborator-container {
-    border: 2px solid black; /* Black border */
-    background-color: white; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 10px; /* Space between the border and the image */
-    display: flex; /* Center the image and text */
-    flex-direction: column; /* Stack image and name vertically */
-    align-items: center; /* Center horizontally */
-    margin-bottom: 15px; /* Space between each collaborator */
-  }
-  
-  .collab-image {
-    max-width: 100px; /* Adjust size as needed */
-    height: auto; /* Keeps the aspect ratio */
-    border-radius: 5px; /* Optional: round the corners of the image */
-  }
-
-  .border-line {
-    width: 85vw;
-    height: 1px; /* Set the height of the line */
-    background-color: #C05A26; /* Set the color of the line */
-    margin: 30px 0 20px 150px; 
+.contentimage-container {
+  position: relative;
+  max-width: 600px; /* Limit max width */
+  margin: 0 auto; /* Center the container */
+  height: fit-content;
 }
+
+.contentmain-img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Maintain image's aspect ratio */
+}
+
+.contentimage-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 53, 131, 0.8); /* Overlay color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.contentimage-container:hover .contentimage-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.project-button {
+  display: inline-block;
+  background-color: #f8f8f8; /* Off-white color */
+  color: #1C3583; /* Text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute; /* Center button */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center using transform */
+  z-index: 2; /* Above overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.contentimage-container:hover .project-button {
+  opacity: 1; /* Show the button on hover */
+}
+
+.content-text {
+  flex: 1;
+  margin-right: 50px; /* Slight left margin */
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.collabcard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 60%;
+}
+
+.collabcard-content {
+  margin: 10px; /* Spacing between collaborators */
+  width: 75px; /* Fixed width */
+}
+
+.collabcard-content img {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.border-line {
+  width: 85vw;
+  height: 1px;
+  background-color: #C05A26;
+  margin: 30px auto; /* Center the line */
+}
+
 .other-projects {
   display: flex;
-    margin: 20px 50px 20px 140px;
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .project-cards {
   display: flex;
-  flex-direction: row;
-  gap: 20px; /* Space between cards */
-  max-width: 350px;
-  flex: 0 0 calc(33.33% - 20px);
+  flex-wrap: wrap;
 }
 
 .project-card {
-  border: 2px solid blue; /* Blue border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  padding: 10px; /* Space inside the card */
-  text-align: center; /* Center align text */
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  flex: 1 1 calc(33% - 20px); /* Responsive sizing */
+  margin: 10px; /* Spacing between cards */
+  transition: transform 0.3s ease; /* Smooth transition */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Enlarge card on hover */
+  z-index: 1; /* Bring to front on hover */
 }
 
 .project-card img {
-  width: auto;
-  border-radius: 8px; /* Slightly round the image corners */
-  height: 150px; /* Set a fixed height for uniformity */
-  object-fit: cover; /* Crop the image to fit the box */
+  width: 100%;
+  height: 150px; /* Fixed height */
+  border-radius: 8px;
+  object-fit: cover; /* Crop the image */
+  margin-bottom: 10px;
 }
 
-.project-card h3 {
-  margin-top: 10px; /* Space between image and title */
+.project-card a {
+  text-decoration: none;
 }
 
-  @media (max-width: 767px) {
-  
-  
-    .content-page {
-    max-width: 100vw;
-    margin: 1vh 2vw;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-wrap: wrap;
+/* Responsive styles */
+@media (max-width: 767px) {
+  .content-page {
     flex-direction: column;
+    align-items: center; /* Center align content */
   }
-  
-  .content-page h2 {
-    display: flex;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #1c3583;
-    font-family: "Gotham Book"
-  
+
+  .content-page h3 {
+    margin-top: 1.5rem; /* Adjust for smaller screens */
+    margin-bottom: 1.5rem; /* Adjust for smaller screens */
   }
-  
-  .contentmain-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    margin-top:-1vh;
-    align-items: center;
-  
-  }
+
   .content-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 0; /* Remove left margin */
+    width: 90%; /* Make width more flexible */
+    text-align: center; /* Center text */
   }
-  
-  .content-page Description {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    font-family: "Gotham Book"
+
+  .collabcard {
+    width: 100%; /* Full width */
+    justify-content: center; /* Center align collaborators */
   }
-  
-  .Names {
-    font-size: 1rem;
-    margin-top: auto;
-    font-family: "Gotham Book"
+
+  .project-card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
   }
-  
-  .collabcard{
-    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .project-card {
+    flex: 1 1 calc(50% - 10px); /* Two cards per row on tablets */
   }
-  
-  .collabcard-content {
-    margin:10px;
-  }
-  
-  .Description{
-    text-align: center;
-    width:100%
-  }
-  
-    
-  }
+}

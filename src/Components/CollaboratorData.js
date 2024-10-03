@@ -7,5 +7,9 @@ export const collaboratorData
   {
     name: "Office of Resilience",
     image: process.env.PUBLIC_URL + "/images/COA_Resilience.png"
+  },
+  {
+    name:'Austin Energy',
+    image: process.env.PUBLIC_URL + "/images/COA_Resilience.png"
   }
 ]

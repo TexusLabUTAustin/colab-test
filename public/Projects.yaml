@@ -19,7 +19,7 @@
     averages, and presented for near-future (2021–2040), midcentury (2041–2070)
     and end of the century (2071–2100) epochs.
   Collaborators: 'Office of Sustainability, Office of Resilience'
-  projectPictureSrc: downtown-projectimg.png
+  projectPictureSrc: climateproject_cover.png
   pictureSrc: climate_reportcover.png
   reportName: Climate_report.pdf
 
@@ -34,3 +34,33 @@
   shortContent: The Austin Heat Resilience Playbook provides strategies and actions to combat extreme heat, focusing on community preparedness and infrastructure improvements to enhance the city's resilience.
   pictureSrc: heat_playbookcover.png
   reportName: heat_playbook.pdf
+
+- title: Passive House Project
+  targetSection: passive-house-project
+  shortContent: >-
+    The Passive House Project delves into both the potential energy saving
+    capabilities and financial viability of employing passive house building
+    standards in multi-family residential projects in Austin, Texas. 
+  longContent: >-
+    In recent years, passive house-building strategies have emerged as a
+    promising avenue to achieve net zero emissions through the use of targeted
+    shading, insulation, ventilation, in order to reduce associated building
+    energy use. However, while the passive house movement has displayed
+    significant growth in recent years, costs remain as one of the foremost
+    barriers to implementation, and thus, a considerable portion of this
+    research addresses the longterm financial implications of integrating these
+    design strategies within multi-family buildings in Austin, Texas. Across
+    both simulated mid-rise and low-rise multi-family models, the adoption of
+    passive house strategies were shown to decrease building energy use
+    intensity (EUI) by 62.13% and 58.95% respectively when compared to
+    code-standard models, in addition to displaying a cost benefit ratio of 1.43
+    and 2.62, respectively. Air-sealing techniques, specifically reducing
+    infiltration from 4.0 air changes per hour (ACH) to the passive house
+    prescribed 0.6 (ACH), displayed the greatest reduction in building energy
+    use when compared to alternative elements of the passive house program, in
+    addition to exhibiting the greatest financial returns over the building
+    lifespan.
+  Collaborators: Austin Energy
+  projectPictureSrc: climateproject_cover.png
+  pictureSrc: climate_reportcover.png
+  reportName: Climate_report.pdf
