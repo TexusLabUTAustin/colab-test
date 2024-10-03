@@ -85,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 60%;
+  max-width: 35%;
 }
 
 .collabcard-content {
@@ -97,12 +97,13 @@
   border: 1px solid black;
   border-radius: 30px;
   padding: 10px;
+  max-height: 75px;
 }
 
 .border-line {
   width: 85vw;
   height: 1px;
-  background-color: #C05A26;
+  background-color: #0097B2;
   margin: 30px auto; /* Center the line */
 }
 
@@ -117,12 +118,12 @@
 }
 
 .project-card {
-  border: 2px solid blue;
+  border: 2px solid #0097B2;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
   text-align: center;
-  flex: 1 1 calc(33% - 20px); /* Responsive sizing */
+  flex: 1 1 calc(23% - 20px); /* Responsive sizing */
   margin: 10px; /* Spacing between cards */
   transition: transform 0.3s ease; /* Smooth transition */
   text-decoration: none; /* Remove underline from link */

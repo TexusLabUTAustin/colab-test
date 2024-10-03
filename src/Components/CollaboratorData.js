@@ -10,6 +10,14 @@ export const collaboratorData
   },
   {
     name:'Austin Energy',
-    image: process.env.PUBLIC_URL + "/images/COA_Resilience.png"
+    image: process.env.PUBLIC_URL + "/images/austinenergylogo.png"
+  },
+  {
+    name:'Transportation and Public Works',
+    image: process.env.PUBLIC_URL + "/images/transportationlogo.png"
+  },
+  {
+    name:'Wildfire Division',
+    image: process.env.PUBLIC_URL + "/images/wildfireLogo.jpg"
   }
 ]

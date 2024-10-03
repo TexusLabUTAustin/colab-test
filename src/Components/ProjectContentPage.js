@@ -41,12 +41,7 @@ function ProjectContentPage({ project, projectList }) {
         <div className="content-text">
           <h2>{project.title}</h2>
           <p className="Description">{project.longContent}</p><br /><br />
-          {/* <div class="btn">
-          <a href={`${process.env.PUBLIC_URL}/pdf/${project.reportName}`} className="pdf-button" target="_blank" rel="noopener noreferrer">
-            <div className="about-button-content">View Full Report</div>
-          </a>
-        </div> */}
-        <h3>In Collaboration with</h3>
+        <h3>Lead Partners</h3>
         <div class="collabcard">
           {
             collaborators.map((collaborator, index) => {

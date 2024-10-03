@@ -22,6 +22,8 @@
   projectPictureSrc: climateproject_cover.png
   pictureSrc: climate_reportcover.png
   reportName: Climate_report.pdf
+  contact: 'Manmeet Singh, Dev Niyogi, Marc Coudert'
+
 
 - title: Austin Summer Outlook
   targetSection: austin-summer-outlook
@@ -61,6 +63,72 @@
     addition to exhibiting the greatest financial returns over the building
     lifespan.
   Collaborators: Austin Energy
+  projectPictureSrc: passivehousecover.jpg
+  pictureSrc: passivehousecover.jpg
+  reportName: ''
+  contact: 'Dariya Fallon, Patricia House, Edward Hooks, Heidi Kasper'
+
+- title: Cool Pavement Pilot Study
+  targetSection: cool-pavement-study
+  shortContent: >-
+    Cool pavement is an adaptational strategy aimed to mitigate the effects of
+    extreme heat. The City of Austin laid down over 6 lane miles of cool
+    pavement in a neighborhood in South East Austin and asked the Co-Lab to
+    evaluate it's efficacy. Since the pavement has been laid down the Co-Lab has
+    been engaged in various efforts to evaluate this mitigation strategy
+    including field measurements, remote sensing, modeling, and social science
+    approaches.  
+  longContent: >-
+    Extreme urban heat has become an intense focus of study for cities as heat
+    is the largest weather related killer in the US. One strategy cities have
+    been evaluating is reflective pavement. Reflective pavements work by
+    increasing the albedo of the road surface to stop the absorption of
+    shortwave solar radiation. Other cities have tried to evaluate reflective
+    pavements and have so far come up with mixed/ inconclusive results. During
+    the summer of 2024 the city of Austin laid down 6.5 lane miles of reflective
+    pavements as a pilot project in South East Austin. To evaluate this
+    adaptation method several strategies have been utilized. 1. 2- Meter air
+    temperature measurements 2. Handheld surface temperature measurements 3.
+    Remote sensing based surface temperature measurements 4. A social science
+    based blind experiement 5. A survey of local residents. This study is
+    currently ongoing and will continue to be updated as more data becomes
+    available.
+  Collaborators: Transportation and Public Works
+  projectPictureSrc: thermal-1.jpg
+  pictureSrc: thermal-1.jpg
+  reportName: ''
+  contact: 'Trevor Brooks, Angela Johnson, Naveen Sudharsan'
+
+- title: Decision Calendars
+  targetSection: decision-calendars
+  shortContent: >-
+    City departments are reliant on different climate and weather information
+    throughout the year for their operations. Decision calendars is a visual
+    framework that is  a tool that is tailored to specifc department needs and
+    their dependency on climate and weather data.  
+  longContent: >-
+    Various operations and activities in the city municipal departments are
+    weather and climate data sensitive. However, there is limited understanding
+    and documentation of how and what datasets and products are required or will
+    be useful for the various operations on the daily, weekly, monthly,
+    seasonal, annual, and longer timescales. A signature project undertaken by
+    the CoLab relates to creation of a Climate Data Decision Calendar (C2D2)
+    that is creating a formal framework for the climate data and decision
+    pairing. An example of work underway with the Austin Fire Department
+    Wildfire Division in developing one such Climate Decision Calendar across
+    the city of Austin, central Texas region. The operations are intense during
+    the fire season, but are also actively underway year round and require a
+    wide range of data at different temporal interval. Additional interactions
+    with other departments such as Austin Parks, Austin Public Works, Austin
+    Water, and Austin Energy are also underway. The idea is that for each of
+    these departments and activities a unique Climate Decision Calendar will be
+    developed based off their specific needs and operations, and this
+    information collectively will assist in helping broaden the understanding of
+    climate data needs, customizing data products, and helping local decision
+    making and planning.
+  Collaborators: Wildfire Division
   projectPictureSrc: climateproject_cover.png
   pictureSrc: climate_reportcover.png
   reportName: Climate_report.pdf
+  contact: 'Allysa Dallmann, Braniff Davis, Justice Jones, Dev Niyogi'
+
