@@ -85,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 35%;
+  max-width: 50%;
 }
 
 .collabcard-content {
