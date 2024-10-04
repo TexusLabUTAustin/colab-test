@@ -24,18 +24,17 @@
   reportName: Climate_report.pdf
   contact: 'Manmeet Singh, Dev Niyogi, Marc Coudert'
 
+- title: Austin Summer Outlook
+  targetSection: austin-summer-outlook
+  shortContent: The Austin Summer Outlook 2024 provides a forecast of expected summer weather patterns, including anticipated heatwaves, temperature trends, and potential impacts on the community. This report helps residents and officials prepare for extreme heat and manage associated risks.
+  pictureSrc: summer_outlookcover.png
+  reportName: SummerOutlook.pdf
 
-# - title: Austin Summer Outlook
-#   targetSection: austin-summer-outlook
-#   shortContent: The Austin Summer Outlook 2024 provides a forecast of expected summer weather patterns, including anticipated heatwaves, temperature trends, and potential impacts on the community. This report helps residents and officials prepare for extreme heat and manage associated risks.
-#   pictureSrc: summer_outlookcover.png
-#   reportName: SummerOutlook.pdf
-
-# - title: Heat Resilience Playbook
-#   targetSection: heat-resilience-playbook
-#   shortContent: The Austin Heat Resilience Playbook provides strategies and actions to combat extreme heat, focusing on community preparedness and infrastructure improvements to enhance the city's resilience.
-#   pictureSrc: heat_playbookcover.png
-#   reportName: heat_playbook.pdf
+- title: Heat Resilience Playbook
+  targetSection: heat-resilience-playbook
+  shortContent: The Austin Heat Resilience Playbook provides strategies and actions to combat extreme heat, focusing on community preparedness and infrastructure improvements to enhance the city's resilience.
+  pictureSrc: heat_playbookcover.png
+  reportName: heat_playbook.pdf
 
 - title: Passive House Project
   targetSection: passive-house-project

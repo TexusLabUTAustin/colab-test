@@ -5,6 +5,22 @@
   margin-bottom: 20px; /* Space below the border, adjust as needed */
 }
 
+.back-button-container {
+  margin: 0px 0px 20px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: #1C3583;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.back-button i {
+  margin-right: 8px;
+}
+
 .content-page {
   max-width: 80vw;
   margin: 1vh auto;
@@ -114,7 +130,14 @@
 
 .project-cards {
   display: flex;
-  flex-wrap: wrap;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  gap: 10px;
+  scrollbar-width: none;
+}
+
+.project-cards::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 .project-card {
@@ -123,11 +146,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
   text-align: center;
-  flex: 1 1 calc(23% - 20px); /* Responsive sizing */
-  margin: 10px; /* Spacing between cards */
+  flex: 0 0 auto;
+  margin: 10px; 
   transition: transform 0.3s ease; /* Smooth transition */
-  text-decoration: none; /* Remove underline from link */
-  color: inherit; /* Inherit text color */
+  text-decoration: none;
+  color: inherit;
   max-width: 250px;
 }
 
@@ -146,6 +169,26 @@
 
 .project-card a {
   text-decoration: none;
+}
+
+.project-cards-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll-button {
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 24px; /* Adjust size */
+  margin-left: 10px; /* Space between button and cards */
+  color: blue; /* Change color as needed */
+  display: flex; /* Center button vertically */
+  align-items: center; /* Center align items */
+}
+
+.scroll-button i {
+  font-size: 24px; /* Adjust icon size */
 }
 
 /* Responsive styles */

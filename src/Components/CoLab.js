@@ -4,6 +4,7 @@ import Timeline from './Timeline';
 import { Helmet } from 'react-helmet';
 import NavbarHero from './NavbarHero';
 import Navbar from './Navbar'
+import Carousel from './Carousel';
 
 
 
@@ -43,13 +44,10 @@ const CoLab = () => {
 {/* ------------------------------------------------------------------------------------------*/}
 {/* Header  */}
 
-        <div className="colab-header">
+        
         {isMobile ? <NavbarHero /> : <Navbar />}
-            
-            <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
-            <div className="overlay">
-                <h1>Empower city departments and the community with climate data and tools</h1>
-            </div>             
+        <div className="colab-header">
+        <Carousel isQuote={false} />
         </div>
 
 {/* ------------------------------------------------------------------------------------------*/}
@@ -162,16 +160,9 @@ const CoLab = () => {
 {/* ------------------------------------------------------------------------------------------*/}
 {/* Quote Picture Section  */}
 
-        <div className="quote">
-            <img src={`${process.env.PUBLIC_URL}/images/doggetposter.jpg`} />
-            <div className="translucent-mask"></div>
-            <p className="centered-text">"Cities have the capability of providing something 
-                                            for everybody, only because, and only when, 
-                                                 they are created by everybody."<br/> <br/>
-                                                <span style={{ fontSize:"1.8rem", fontWeight: 900, fontFamily:"Gotham Book" }}>-Jane Jacobs</span> </p>
+        <div className='quote'>
+        <Carousel isQuote={true} />
         </div>
-
-        
 
 
 

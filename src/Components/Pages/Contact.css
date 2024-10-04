@@ -1,9 +1,6 @@
 .header-banner {
-    /* background-color: #0097B2; */
-    /* Change to your desired color */
-    padding: 20px 180px;
+    padding: 40px 180px 20px;
     text-align: center;
-    /* Center the text */
 }
 
 .header-banner h1 {
@@ -16,24 +13,18 @@
 
 .info-container {
     display: flex;
-    /* Use flexbox for layout */
     margin-top: 20px;
-    /* Space above the info boxes */
 }
 
 .info-left {
     flex: 2;
-    /* Left side takes available space */
     margin-right: 20px;
-    /* Space between the left and right */
     display: flex;
     flex-direction: column;
-    /* Stack boxes vertically */
 }
 
 .info-img {
     flex: 1;
-    /* Right side takes equal space */
     margin-right: 60px;
 }
     
@@ -46,28 +37,22 @@
 .info-heading {
     font-weight: 100;
     color: #1C3583;
-    /* Dark text color for headings */
     margin: 0 0 10px;
-    /* Space below heading */
 }
 
 .info-content {
     color: #1C3583;
-    /* Darker gray for content */
 }
 
 .contact-image {
-    /* Makes the image responsive */
     height: auto;
-    /* Keeps the aspect ratio */
     border-radius: 5px;
-    /* Optional: round the corners of the image */
     width: 100%;
 }
 
 .contact-line {
-    width: 45vw; /* Set the width of the line */
-    height: 1px; /* Set the height of the line */
-    background-color: #C05A26; /* Set the color of the line */
+    width: 45vw;
+    height: 1px;
+    background-color: #C05A26;
     margin: 0 0 20px 180px; 
 }
