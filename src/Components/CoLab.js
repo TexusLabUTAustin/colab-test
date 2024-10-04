@@ -49,19 +49,7 @@ const CoLab = () => {
             <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="overlay">
                 <h1>Empower city departments and the community with climate data and tools</h1>
-            </div>
-
-            
-             <div className="scroll-down-box">
-                <a href="#target-section">
-            <img src={`${process.env.PUBLIC_URL}/images/scroll-down.svg`} className="scroll-down"/>
-            </a>
-            </div>
-
-            
-
-
-             
+            </div>             
         </div>
 
 {/* ------------------------------------------------------------------------------------------*/}

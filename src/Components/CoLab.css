@@ -6,8 +6,11 @@
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
-.colab-header{
-    height: 100vh;
+.colab-header {
+    height: auto; /* Allow header height to adjust */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Keep relative positioning for overlays */
 }
 
 .top-banner{
@@ -26,37 +29,30 @@
 }
 
 
-.overlay{
-position:absolute;
-padding:50px 10px 10px 180px;
-background: rgba(255,255,255,.0);
-height: 50vh;
-width: 50vw;
-display:flex;
-flex-direction: column;
-}
-
-.overlay h1{
-    color: #02214C;
-    font-size: 2.6rem;
-    bottom:0;
-    display:flex-end;
-    margin-bottom: 0;
-    line-height:1.2;
-    font-family:"Gotham Book"
-}
-
-
- .top-image { 
+.overlay {
     position: absolute;
-    /* height: calc(100vh - 100px); */
-    width: 80vw;
-    object-fit: cover;
-    opacity:0.9;
-    background-color:#E8EBEF;
-    transform: translateY(-10%) scale(1.5);
-    height:76%;
-    
+    top: 20%;
+    left: 11%;
+    padding: 10px;
+    width: auto; /* Adjust width if necessary */
+    max-width: 400px; /* Set a maximum width to prevent overflow */
+    z-index: 2; /* Ensure it stays above the image */
+    color: #02214C; /* Text color */
+}
+
+.overlay h1 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    font-family: 'Gotham Book';
+}
+
+
+.top-image {
+    width: 100%; /* Full width */
+    height: 60vh; /* Adjust height as needed */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    object-position: bottom;
+    background-color: #E8EBEF; /* Fallback background color */
 }
 
 .coa-logo{
@@ -73,45 +69,39 @@ flex-direction: column;
     height: 100px;
 }
 
-.scroll-down-box{
-    position:absolute;
-    bottom:0vh;
-    left:50%;
-    transform: translateX(-50%); 
-    height: 50px;
-    width:100vw;
-    background-color:rgba(0,0,0,0.3);
-    align-items:center;
- 
-}
-.scroll-down{
-    height: 50px;
-    position:absolute;
-    left:50%;
-    transform: translateX(-50%); 
-    display:hidden;
-}
-
-
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
 /* What is Colab */
 
-.intro-container{
+.intro-container {
     display: flex;
-    flex-direction:row;
-    height:fit-content;
-    background-color:#E8EBEF;
-    gap: 50px;
-    align-items:stretch;
-    padding:80px;
-    padding-left:0px;
-    
-
-
+    flex-direction: row;
+    align-items: stretch; /* Stretch items to fill the container */
+    gap: 50px; /* Space between elements */
+    padding: 80px; /* Overall padding */
+    background-color: #E8EBEF; /* Background color */
 }
+
+.introcover {
+    flex: 1; /* Allow it to grow and fill space */
+}
+
+.introcover img {
+    width: 100%; /* Make the image responsive */
+    max-width: 600px; /* Set a max width to limit size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.intro-box {
+    flex: 1; /* Allow it to grow and fill space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between elements in the intro box */
+}
+
 .Introduction{
     
     align-items:left;
@@ -120,12 +110,6 @@ flex-direction: column;
     background-color:#E8EBEF;
     flex-direction:row;
 
-}
-
-.intro-box {
-    display:flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .intro-box h1{
@@ -140,11 +124,6 @@ flex-direction: column;
     
         font-weight:600;
     
-}
-
-.introcover img{
-    width: 35vw;
-    border: 8px solid steelblue;
 }
 
 /* ------------------------------------------------------------ */
@@ -167,6 +146,7 @@ flex-direction: column;
     align-items:left;
 
 }
+
 .Problems h1{
     color: #fff;
     font-size: 2.6rem;
@@ -458,33 +438,18 @@ font-family: "Gotham Book";
         height: 80px;
     }
 
-    .overlay{
-        left:0;
-        top:30px;
-        padding: 20px 20px 20px 20px;
-        background-color: rgba(0, 0, 0, 0.4);
-        width: 67vw;
-        height: auto;
-        display: flex;
-        flex-direction: column;
+    .top-image {
+        height: 50vh; /* Adjust height for mobile */
+    }
+
+    .overlay {
+        top: 5%; /* Less padding for mobile */
+        left: 5%;
+        padding: 5px; /* Reduce padding */
     }
 
     .overlay h1 {
-        font-size: 2rem;
-        margin:0;
-        color: white;
-    }
-
-    .top-image {
-        height: 57vh;
-    }
-
-    /* Adjusting Introduction section */
-    .intro-container {
-        flex-direction: column;
-        padding: 40px 10px;
-        height:auto;
-        gap: 20px;
+        font-size: 1.5rem; /* Smaller font size for mobile */
     }
 
     .intro-box h1{
@@ -510,14 +475,17 @@ font-family: "Gotham Book";
         font-size: 1.5rem;
     }
     .blob-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
+        flex-direction: column; /* Stack blobs on mobile */
+        align-items: center; /* Center blobs */
     }
 
     .blob {
-        width: 90%;
-        margin: 10px 0;
+        width: 90%; /* Full width on mobile */
+    }
+
+    .intro-container {
+        flex-direction: column; /* Stack elements on mobile */
+        align-items: center; /* Center elements */
     }
 
     /* Adjusting Urgency section */
