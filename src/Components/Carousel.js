@@ -18,7 +18,7 @@ const CarouselImages = [
     { 
         src: `${process.env.PUBLIC_URL}/images/Quotezach.png`, 
         text: `"The power of the UT-City Climate CoLab lies in its ability to combine research, policy, and community engagement to create lasting climate solutions that benefit everyone."`, 
-        overlayColor: 'rgba(0, 151, 178, 0.5)',
+        overlayColor: 'rgba(0, 151, 178, 0.55)',
         name: "- Zach Baumer",
         affiliation: "City of Austin’s Office of Sustainability, Chief Sustainability Officer",
         isQuote: true 
@@ -26,7 +26,7 @@ const CarouselImages = [
     { 
         src: `${process.env.PUBLIC_URL}/images/Quotemarc.png`, 
         text: `"By bringing together experts, policymakers, and communities, the UT-City Climate CoLab is shaping a more resilient future for cities in the face of climate change.”`, 
-        overlayColor: 'rgba(28, 53, 131, 0.5)',
+        overlayColor: 'rgba(28, 53, 131, 0.55)',
         name: "- Marc Coudert",
         affiliation: "City of Austin’s Office of Sustainability, Chief Sustainability Officer",
         isQuote: true 
@@ -34,7 +34,7 @@ const CarouselImages = [
     { 
         src: `${process.env.PUBLIC_URL}/images/Quote1.png`, 
         text: `"Cities have the capability of providing something for everybody, only because, and only when, they are created by everybody."`, 
-        overlayColor: 'rgba(28, 53, 131, 0.5)',
+        overlayColor: 'rgba(192, 90, 38, 0.55)',
         name: "- Jane Jacobs",
         affiliation: "",
         isQuote: true 
