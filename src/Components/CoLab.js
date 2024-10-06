@@ -105,10 +105,10 @@ const CoLab = () => {
                               <img src={`${process.env.PUBLIC_URL}/images/Connectivity.png`} />
                           </div>
                           <div className="blob-text">
-                              <h2>Department Connectivity</h2>
+                              <h2>Department<br/>Connectivity</h2>
                           </div>
                           <div className="blob-hover">
-                              <h2>Department Connectivity</h2>
+                              <h2>Department<br/>Connectivity</h2>
                               <p>City data needs vary across departments. Data need to be connected to city department decision making.</p>
                           </div>
                       </div>
@@ -130,10 +130,10 @@ const CoLab = () => {
                               <img src={`${process.env.PUBLIC_URL}/images/Partnerships.png`} />
                           </div>
                           <div className="blob-text">
-                              <h2>Stakeholder Partnerships</h2>
+                              <h2>Stakeholder<br/>Partnerships</h2>
                           </div>
                           <div className="blob-hover">
-                              <h2>Stakeholder Partnerships</h2>
+                              <h2>Stakeholder<br/>Partnerships</h2>
                               <p>UT/ City climate research projects need stakeholder partnerships to be successful.</p>
                           </div>
                       </div>
@@ -147,25 +147,38 @@ const CoLab = () => {
 {/* ------------------------------------------------------------------------------------------*/}
 {/* Urgency  */}
 
-         <div className="urgency">
-            
-            <div className="urgency-title">
-                     <h1 >Urgency</h1>
+<div className="urgency">
+    <div className="urgency-content">
+    <h1>Urgency</h1>
+        <div className="urgency-container">
+            <div className="urgencycard" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/urgencycard1.png)` }}>
+                <div className="urgency-card-content">
+                    Increase in the climate extremes; city needs to prepare for eventualities.
                 </div>
-               
-                <div className="urgency-content">
-                    <ul>
-                        <li>Increase in the climate extremes; city needs to prepare for eventualities.</li>
-                        <li>Disadvantaged communities greatly challenged in “bouncing back”.</li>
-                        <li>Infrastructure and response plans underway.</li>
-                        <li>Students interested in place-based research.</li>
-                        <li>Federal grant opportunities are growing.</li>
-
-                    </ul>
-                 
-                </div>
-
             </div>
+            <div className="urgencycard" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/urgencycard2.png)` }}>
+                <div className="urgency-card-content">
+                    Disadvantaged communities greatly challenged in “bouncing back”.
+                </div>
+            </div>
+            <div className="urgencycard" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/downtown-austin-skyline.jpg)` }}>
+                <div className="urgency-card-content">
+                    Infrastructure and response plans underway.
+                </div>
+            </div>
+            <div className="urgencycard" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/whatiscolab.png)` }}>
+                <div className="urgency-card-content">
+                    Students interested in place-based research.
+                </div>
+            </div>
+            <div className="urgencycard" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/urgencycard3.png)` }}>
+                <div className="urgency-card-content">
+                    Federal grant opportunities are growing.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 {/* ------------------------------------------------------------------------------------------*/}

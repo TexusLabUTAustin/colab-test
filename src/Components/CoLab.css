@@ -144,7 +144,7 @@
 
 .Problems {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     padding: 0;
 }
 
@@ -178,6 +178,7 @@
     color: #fff;
     font-size: 2.6rem;
     margin: 0;
+    padding-left: 10px;
 }
 
 .Problems h2 {
@@ -221,9 +222,9 @@
     background-color: white;
     color: black;
     opacity: 0;
-    padding: 10px;
+    padding: 15px;
     transition: opacity 0.3s ease;
-    text-align: center;
+    text-align: left;
     z-index: 0;
 }
 
@@ -271,45 +272,85 @@ color: green;
 
 /* Urgency */
 
-.urgency{
-    height: 600px;;
+.urgency {
+    height: auto;
     display: flex;
-    flex-direction:row;
-    background-color:#E8EBEF
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 600px;
 }
 
-.urgency-title h1{
+.urgency-title {
+    width: 100%;
+}
+
+.urgency-content h1 {
     font-size: 2.6rem;
-    padding: 0;
     margin: 0;
-    padding: 130px;
-    padding-left: 180px;
+    padding: 30px;
+    text-align: left;
 }
 
-.urgency-content{
+.urgency-content {
     font-size: 1.3rem;
-    max-width:55vw;
-    margin: auto auto;
+    margin: auto;
+    text-align: left;
+    width: 90%;
 }
 
-.urgency-content ul {
-  list-style-type: none;
-  margin: 0;
-  padding-top: 50px;
+.urgency-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
 }
 
-.urgency-content li{
-    font-size: 1.3rem;
-    font-family:"Gotham Book";
-    padding-bottom: 30px;
-    padding-top:30px;
-    border-bottom: 2px solid #02214C;
-    color:#02214C;
-
+.urgencycard {
+    position: relative;
+    overflow: hidden;    
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+    cursor: pointer; 
 }
 
-.urgency-content li:last-child{
-    border-bottom:none;
+.urgency-card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    transition: color 0.3s;
+}
+
+.urgencycard:hover {
+    background-color: transparent; 
+    color: white;
+}
+
+.urgencycard:hover::after {
+    opacity: 1;
+}
+
+.urgencycard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(28, 53, 131, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+.urgencycard:hover .urgency-card-content {
+    color: white;
 }
 
 
@@ -478,9 +519,6 @@ color: green;
 @media only screen and (max-width: 768px) {
 
     /* Adjusting the header */
-    .colab-header {
-        height: 65vh;
-    }
 
     .scroll-down-box{
         display:none;
@@ -491,20 +529,15 @@ color: green;
     }
    
     .top-image {
-        height: 50vh; /* Make the image smaller on mobile */
+        height: 50vh;
     }
 
-    .text-overlay {
-        bottom: 5%;
-        left: 5%;
-    
-    }
     .caraousel-scroll-button {
-        padding: 8px; /* Smaller buttons on mobile */
+        padding: 8px;
     }
     
     .text-overlay h1 {
-        font-size: 1.5rem; /* Smaller font size for mobile */
+        font-size: 1.3rem;
     }
 
     .intro-box h1{
@@ -521,9 +554,18 @@ color: green;
     }
 
     /* Adjusting Problems section */
+
+    .Problems{
+        height: auto;
+    }
+
     .Problems h1 {
         font-size: 2rem;
         padding: 40px 20px;
+    }
+
+    .problem-img {
+        height: 600px;
     }
 
     .Problems h2 {
@@ -531,53 +573,57 @@ color: green;
     }
     
     .blob-section {
-        flex-direction: column; /* Stack cards on smaller screens */
-        align-items: center; /* Center the cards */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .blob {
-        max-width: 100%; /* Full width on smaller screens */
-        margin: 10px 0; /* Margin above and below */
+        max-width: 100%;
+        min-width: fit-content;
+        margin: 10px 0;
+    }
+
+    .blob-icon img {
+        width: 50px;
+    }
+
+    .blob-hover {
+        padding: 10px;
     }
 
     .blob h2 {
-        font-size: 1.2rem; /* Smaller font size on mobile */
+        font-size: 1rem;
     }
 
     .blob p {
-        font-size: 0.9rem; /* Smaller font size on mobile */
+        font-size: 0.7rem;
     }
 
     .intro-container {
-        flex-direction: column; /* Stack elements on mobile */
-        align-items: center; /* Center elements */
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Adjusting Urgency section */
-    .urgency {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-    }
-
     .urgency-title h1 {
         font-size: 2rem;
-        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .urgencycard {
+        width: 80%;
+        height: 250px;
     }
 
     .urgency-content {
-        max-width: 90vw;
         font-size: 1.1rem;
+        margin: 0 20px;
     }
 
-    .urgency-content ul {
-        padding-top: 20px;
-    }
-
-    .urgency-content li {
-        padding-bottom: 20px;
-        padding-top: 20px;
-        font-size: 1rem;
+    .urgency {
+        padding: 50px 20px;
+        min-height: 500px;
     }
 
     /* Adjusting Quote section */

@@ -52,6 +52,14 @@
     }
 
     .footer-links {
-        flex-direction:column; /* Stack links vertically on mobile */ 
+        gap: 50px;
+    }
+
+    .footer-title{
+        font-size: 1.3rem;
+    }
+
+    .footer-logo{
+        height: 60px;
     }
 }
