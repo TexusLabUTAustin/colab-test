@@ -166,6 +166,7 @@ li {
     margin: 10px 0;
     padding: 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .dropdown-header {
@@ -189,12 +190,15 @@ li {
 }
 
 .dropdown-content {
-    display: none;
-    padding: 10px 30px;
+    max-height: 0;
+    overflow: hidden; 
+    padding: 0 30px; 
+    transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
 .dropdown-card:hover .dropdown-content {
-    display: block;
+    max-height: 200px; /* Adjust based on your content size */
+    padding: 10px 30px; /* Show padding when expanded */
 }
 
 .dropdown-item {
@@ -215,6 +219,7 @@ li {
 .read-more {
     color: #0097B2;
     text-decoration: none;
+    padding-left: 10px;
 }
 
 /*Colab structure*/
