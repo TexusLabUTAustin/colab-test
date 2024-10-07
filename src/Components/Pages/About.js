@@ -2,6 +2,54 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Navbar from '../Navbar'; // Import the new Navbar component
 import './About.css';
 
+const dropdownData = [
+    {
+        title: "Climate Assessments",
+        icon: `${process.env.PUBLIC_URL}/images/Climate-icon.png`,
+        options: [
+            { text: "Climate trends, patterns, changes, event summaries", link: "#" },
+            { text: "Case studies for high impact events", link: "#" },
+            { text: "Future Projections", link: "#" },
+        ],
+    },
+    {
+        title: "Decision Calendars",
+        icon: `${process.env.PUBLIC_URL}/images/Calendar-icon.png`,
+        options: [
+            { text: "Work with City operations", link: "#" },
+            { text: "Document What climate information is needed, Who needs it, When, Why?", link: "#" },
+            { text: "How accurate, and How will it be used?", link: "#" },
+        ],
+    },
+    {
+        title: "Policy Briefs",
+        icon: `${process.env.PUBLIC_URL}/images/Policy-icon.png`,
+        options: [
+            { text: "Map networks for outreach, programs, and community organizations links", link: "#" },
+            { text: "Connect climate modeling data products to social and policy science, social vulnerability", link: "#" },
+        ],
+    },
+    {
+        title: "City-Wide Data Products",
+        icon: `${process.env.PUBLIC_URL}/images/City-icon.png`,
+        options: [
+            { text: "High resolution data based on different department needs", link: "#" },
+            { text: "Local-scale climate products", link: "#" },
+            { text: "Combine Data + Lived Experience", link: "#" },
+        ],
+    },
+    {
+        title: "Synthesis Studies",
+        icon: `${process.env.PUBLIC_URL}/images/Data-icon.png`,
+        options: [
+            { text: "Cool Pavement", link: "#" },
+            { text: "Fire, flood, hotspots", link: "#" },
+            { text: "If-then assessments for future city growth and climate", link: "#" },
+            { text: "Classroom and public education", link: "#" },
+        ],
+    },
+];
+
 const About = () => {
     return(
         <div className="focus">
@@ -49,71 +97,102 @@ const About = () => {
             {/* ------------------------------------------------------------------------------------------*/}
             {/* Project Cards  */}
 
-                    <div className="colab-ongoing" style={{ 
-                    
-                }}>
-                    <div className="ongoing-header">
-                        <h1 className="ongoing-header-title">Planning and Implementation</h1>
-                    </div>
+            {/* <div className="colab-ongoing" style={{
 
-                    <div className="ongoing-cards">
+            }}>
+                <div className="ongoing-header">
+                    <h1 className="ongoing-header-title">Planning and Implementation</h1>
+                </div>
 
-                        <div className="colab-ongoing-card">         {/* Copy  */}
+                <div className="ongoing-cards">
+
+                    <div className="colab-ongoing-card">    
                         <div className="colab-section">
-                            <div className="circle-symbol"> 
-                            <img src={`${process.env.PUBLIC_URL}/images/Climate.png`}/>
+                            <div className="circle-symbol">
+                                <img src={`${process.env.PUBLIC_URL}/images/Climate.png`} />
                             </div>
-                            <h1 className="ongoing-title">CLIMATE ASSESSMENTS</h1>   
+                            <h1 className="ongoing-title">CLIMATE ASSESSMENTS</h1>
                             <p>Climate trends, patterns, changes, event summaries <br /> <br /> Case studies for high impact events. <br /> <br /> Future Projections </p>
-                            </div>
-
                         </div>
 
-                        <div className="colab-ongoing-card">
-                            <div className="colab-section">
-                                <div className="circle-symbol"> 
-                                <img src={`${process.env.PUBLIC_URL}/images/Calendar.png`}/>
-                                </div>
-                                <h1 className="ongoing-title">DECISION CALENDARS</h1>   
-                                <p>Work with City operations <br/> <br /> Document What climate information is needed, Who needs it, When, Why? <br /> <br /> How accurate, and How will it be used?</p>
+                    </div>
+
+                    <div className="colab-ongoing-card">
+                        <div className="colab-section">
+                            <div className="circle-symbol">
+                                <img src={`${process.env.PUBLIC_URL}/images/Calendar.png`} />
                             </div>
+                            <h1 className="ongoing-title">DECISION CALENDARS</h1>
+                            <p>Work with City operations <br /> <br /> Document What climate information is needed, Who needs it, When, Why? <br /> <br /> How accurate, and How will it be used?</p>
                         </div>
+                    </div>
 
-                        <div className="colab-ongoing-card">
-                            <div className="colab-section">
-                                <div className="circle-symbol">
-                                <img src={`${process.env.PUBLIC_URL}/images/Policy.png`}/> </div>
-                                <h1 className="ongoing-title">POLICY BRIEFS</h1>   
-                                <p>Map networks for outreach, programs, and community organizations links <br /> <br /> Connect climate modeling data products to social and policy science, social vulnerability </p>
-                            </div>
-                        </div>
-
-
-                        <div className="colab-ongoing-card">
-                            <div className="colab-section">
-                                <div className="circle-symbol"> 
-                                <img src={`${process.env.PUBLIC_URL}/images/City.png`}/>
-                                </div>
-                                <h1 className="ongoing-title">CITY WIDE DATA PRODUCTS</h1>   
-                                <p>High resolution data based on different department needs <br/> <br/> Local-scale climate products <br/> <br/> Combine Data + Lived Experience</p>
-                            </div>
-                        </div>
-
-
-
-                        <div className="colab-ongoing-card">
-                            <div className="colab-section">
-                            <div className="circle-symbol"> 
-                            <img src={`${process.env.PUBLIC_URL}/images/Data.png`}/>
-                            </div>
-                                <h1 className="ongoing-title">SYNTHESIS STUDIES</h1>   
-                                <p>Cool Pavement <br/> <br/> Fire, flood, hotspots <br/> <br/> If-then assessments for future city growth and climate <br/> <br/> Classroom and public education</p>
-                            </div>
+                    <div className="colab-ongoing-card">
+                        <div className="colab-section">
+                            <div className="circle-symbol">
+                                <img src={`${process.env.PUBLIC_URL}/images/Policy.png`} /> </div>
+                            <h1 className="ongoing-title">POLICY BRIEFS</h1>
+                            <p>Map networks for outreach, programs, and community organizations links <br /> <br /> Connect climate modeling data products to social and policy science, social vulnerability </p>
                         </div>
                     </div>
 
 
+                    <div className="colab-ongoing-card">
+                        <div className="colab-section">
+                            <div className="circle-symbol">
+                                <img src={`${process.env.PUBLIC_URL}/images/City.png`} />
+                            </div>
+                            <h1 className="ongoing-title">CITY WIDE DATA PRODUCTS</h1>
+                            <p>High resolution data based on different department needs <br /> <br /> Local-scale climate products <br /> <br /> Combine Data + Lived Experience</p>
+                        </div>
                     </div>
+
+
+
+                    <div className="colab-ongoing-card">
+                        <div className="colab-section">
+                            <div className="circle-symbol">
+                                <img src={`${process.env.PUBLIC_URL}/images/Data.png`} />
+                            </div>
+                            <h1 className="ongoing-title">SYNTHESIS STUDIES</h1>
+                            <p>Cool Pavement <br /> <br /> Fire, flood, hotspots <br /> <br /> If-then assessments for future city growth and climate <br /> <br /> Classroom and public education</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> */}
+
+            <div className="planning-implementation">
+                <div className="ongoing-header">
+                    <h1 className="ongoing-header-title">Planning and<br/>Implementation</h1>
+                </div>
+
+                <div className="ongoing-content">
+                    <div className="dropdown-section">
+                        {dropdownData.map((item, index) => (
+                            <div className="dropdown-card" key={index}>
+                                <div className="dropdown-header">
+                                    <div className="circle-symbol">
+                                        <img src={item.icon} alt="Icon" />
+                                    </div>
+                                    <h1 className="dropdown-title">{item.title}</h1>
+                                    <button className="dropdown-arrow">▼</button>
+                                </div>
+                                <div className="dropdown-content">
+                                    {item.options.map((option, idx) => (
+                                        <div className="dropdown-item" key={idx}>
+                                            <span className="dropdown-text">{option.text}</span>
+                                            <a href={option.link} className="read-more">Read More</a>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
             <div className="diagram-container">
                 <h1 className="diagram-title">CoLab Structure</h1>
                 <img src={`${process.env.PUBLIC_URL}/images/Climate-CoLab Triangle.png`} alt="CoLab Structure Diagram" className="centered-image" />
