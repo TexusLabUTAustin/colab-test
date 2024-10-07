@@ -25,16 +25,38 @@
   contact: 'Manmeet Singh, Dev Niyogi, Marc Coudert'
 
 - title: Austin Summer Outlook
-  targetSection: austin-summer-outlook
-  shortContent: The Austin Summer Outlook 2024 provides a forecast of expected summer weather patterns, including anticipated heatwaves, temperature trends, and potential impacts on the community. This report helps residents and officials prepare for extreme heat and manage associated risks.
+  targetSection: austin-summers-outlook
+  shortContent: >-
+    The Austin Summer Outlook 2024 provides a forecast of expected summer
+    weather patterns, including anticipated heatwaves, temperature trends, and
+    potential impacts on the community. This report helps residents and
+    officials prepare for extreme heat and manage associated risks.
+  longContent: >-
+    The Austin Summer Outlook 2024 provides a forecast of expected summer
+    weather patterns, including anticipated heatwaves, temperature trends, and
+    potential impacts on the community. This report helps residents and
+    officials prepare for extreme heat and manage associated risks.
+  Collaborators: 'Office of Sustainability, Office of Resilience'
+  projectPictureSrc: outlookcover-report.png
   pictureSrc: summer_outlookcover.png
   reportName: SummerOutlook.pdf
+  contact: ''
 
 - title: Heat Resilience Playbook
   targetSection: heat-resilience-playbook
-  shortContent: The Austin Heat Resilience Playbook provides strategies and actions to combat extreme heat, focusing on community preparedness and infrastructure improvements to enhance the city's resilience.
+  shortContent: >-
+    The Austin Heat Resilience Playbook provides strategies and actions to
+    combat extreme heat, focusing on community preparedness and infrastructure
+    improvements to enhance the city's resilience.
+  longContent: >-
+    The Austin Heat Resilience Playbook provides strategies and actions to
+    combat extreme heat, focusing on community preparedness and infrastructure
+    improvements to enhance the city's resilience.
+  Collaborators: ''
+  projectPictureSrc: heatcover-report.png
   pictureSrc: heat_playbookcover.png
   reportName: heat_playbook.pdf
+  contact: ''
 
 - title: Passive House Project
   targetSection: passive-house-project
@@ -130,4 +152,28 @@
   pictureSrc: climate_reportcover.png
   reportName: Climate_report.pdf
   contact: 'Allysa Dallmann, Braniff Davis, Justice Jones, Dev Niyogi'
+
+- title: Extreme Weather & Hurricane Prediction
+  targetSection: extreme-hurricane-prediction
+  shortContent: >-
+    Extreme weather events including hurricanes and extreme rainfalls are
+    occurring frequently in the recent decades over all the global basins.
+    Sophisticated modeling system enables us to have higher accuracy in for the
+    predicting of these events bringing crucial information for the mitigation
+    and preparedness strategies. However, the understanding and accurate
+    predictability of these high impact weather events pose challenges which
+    needs continous research analyzing different feedback systems.
+  longContent: >-
+    Extreme weather events including hurricanes and extreme rainfalls are
+    occurring frequently in the recent decades over all the global basins.
+    Sophisticated modeling system enables us to have higher accuracy in for the
+    predicting of these events bringing crucial information for the mitigation
+    and preparedness strategies. However, the understanding and accurate
+    predictability of these high impact weather events pose challenges which
+    needs continous research analyzing different feedback systems.
+  Collaborators: 'TACC,AOML/NOAA,INCOIS India,NIT-R India'
+  projectPictureSrc: heat_playbookcover.png
+  pictureSrc: heat_playbookcover.png
+  reportName: ''
+  contact: 'Sasanka Talukdar, Shyama Mohanty, Alka Tiwari, Rashith'
 

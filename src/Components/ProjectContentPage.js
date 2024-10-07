@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProjectContentPage.css'; // Import the CSS file
 import { Link } from 'react-router-dom';
-import { collaboratorData } from './CollaboratorData';
+import { collaboratorData, contactData } from './ProjectData';
 import Navbar from './Navbar';
 
 
@@ -13,6 +13,7 @@ function ProjectContentPage({ project, projectList }) {
   }
 
   const collaborators = project.Collaborators.split(',').map((name) => name.trim());
+  const contacts = project.contact.split(',').map((contactName) => contactName.trim());
 
   const scrollRight = () => {
     const container = document.querySelector('.project-cards');
@@ -72,26 +73,64 @@ function ProjectContentPage({ project, projectList }) {
             </a>
           </div>
           <h2>{project.title}</h2>
-          <p className="Description">{project.longContent}</p><br /><br />
-          <h3>Lead Partners</h3>
-          <div class="collabcard">
-            {
-              collaborators.map((collaborator, index) => {
+          <p className="Description">{project.longContent}</p>
+          {collaborators.length > 1 && (
+            <>
+            <br /><br />
+              <div className='collabcard-container'>
+                <h3>Lead Partners</h3>
+                <div class="collabcard">
+                  {
+                    collaborators.map((collaborator, index) => {
 
-                // Find the corresponding team member
-                const collabName = collaboratorData.find(member => member.name === collaborator);
+                      // Find the corresponding team member
+                      const collabName = collaboratorData.find(member => member.name === collaborator);
 
-                // Use the team member's image if found, otherwise use a default image
-                const imageSrc = collabName ? collabName.image : process.env.PUBLIC_URL + "/images/defaultpic.png";
+                      // Use the team member's image if found, otherwise use a default image
+                      const imageSrc = collabName ? collabName.image : process.env.PUBLIC_URL + "/images/defaultpic.png";
 
-                return (
-                  <><div class="collabcard-content">
-                    <img src={imageSrc} alt={project.title} />
-                  </div>
-                  </>
-                );
-              })}
-          </div>
+                      return (
+                        <><div class="collabcard-content">
+                          <img src={imageSrc} alt={project.title} />
+                        </div>
+                        </>
+                      );
+                    })}
+                </div>
+              </div>
+            </>
+          )}
+
+          {contacts.length > 1 && (
+            <>
+            <br /><br />
+              <div className='contactcontainer'>
+                <h3>Contact</h3>
+                <div class="contactcardgrid">
+                  {
+                    contacts.map((contact, index) => {
+
+                      const contactName = contactData.find(member => member.name === contact);
+
+                      const contactEmail = contactName ? contactName.email : "email@colab.com";
+
+                      return (
+                        <>
+                          <div key={index} className="contactcard">
+                            <div className="contactinfo">
+                              <span>Name: {contact}</span>
+                            </div>
+                            <div className="contactinfo">
+                              <span>Email: {contactEmail}</span>
+                            </div>                 
+                          </div>
+                        </>
+                      );
+                    })}
+                </div>
+              </div>
+            </>
+          )}
         </div>
         <div class="border-line"></div>
         <div className="other-projects">

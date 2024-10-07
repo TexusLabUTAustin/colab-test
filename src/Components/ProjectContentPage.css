@@ -1,8 +1,8 @@
 .top-border {
-  width: 100%; /* Full width */
-  height: 1px; /* Border thickness */
-  background-color: #1C3583; /* Blue color */
-  margin-bottom: 20px; /* Space below the border, adjust as needed */
+  width: 100%;
+  height: 1px;
+  background-color: #1C3583;
+  margin-bottom: 20px;
 }
 
 .back-button-container {
@@ -36,20 +36,20 @@
   color: #1c3583;
   font-family: "Gotham Book";
   font-weight: bold;
-  margin-bottom: 1rem; /* Ensure a proper margin */
+  margin-bottom: 1rem;
 }
 
 .contentimage-container {
   position: relative;
-  max-width: 600px; /* Limit max width */
-  margin: 0 auto; /* Center the container */
+  max-width: 600px;
+  margin: 0 auto;
   height: fit-content;
 }
 
 .contentmain-img {
-  max-width: 100%; /* Responsive image */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Maintain image's aspect ratio */
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
 }
 
 .contentimage-overlay {
@@ -98,22 +98,26 @@
 }
 
 .collabcard {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 20px;
+  max-width: 100%;
 }
 
 .collabcard-content {
-  margin: 10px; /* Spacing between collaborators */
-  width: 75px; /* Fixed width */
+  display: flex;
 }
 
 .collabcard-content img {
   border: 1px solid black;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 10px;
   max-height: 75px;
+  width: auto;
+}
+
+.collabcard-container{
+
 }
 
 .border-line {
@@ -130,8 +134,8 @@
 
 .project-cards {
   display: flex;
-  overflow-x: auto; /* Allow horizontal scrolling */
-  scroll-behavior: smooth; /* Smooth scrolling effect */
+  overflow-x: auto;
+  scroll-behavior: smooth;
   gap: 10px;
   scrollbar-width: none;
 }
@@ -178,17 +182,41 @@
 }
 
 .scroll-button {
-  border: none; /* No border */
-  cursor: pointer; /* Pointer cursor */
-  font-size: 24px; /* Adjust size */
-  margin-left: 10px; /* Space between button and cards */
-  color: blue; /* Change color as needed */
-  display: flex; /* Center button vertically */
-  align-items: center; /* Center align items */
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+  color: #1C3583;
+  display: flex;
+  align-items: center;
 }
 
 .scroll-button i {
   font-size: 24px; /* Adjust icon size */
+}
+
+/*Contact Card grid*/
+.contactcontainer {
+}
+
+.contactcardgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contactcard {
+}
+
+.contactinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactinfo span {
+  font-size: 0.8rem;
+  color: #1c3583;
+  font-family: "Gotham Book";
 }
 
 /* Responsive styles */
@@ -210,12 +238,15 @@
   }
 
   .collabcard {
-    width: 100%; /* Full width */
-    justify-content: center; /* Center align collaborators */
+    grid-template-columns: 1fr; /* Single column on small screens */
   }
 
   .project-card {
     flex: 1 1 calc(50% - 20px); /* Two cards per row */
+  }
+
+  .contactcardgrid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,38 +1,62 @@
 /* Focus */
 
 .focus{
-    flex-direction:column;
-    
-    
-    
+    flex-direction:column;  
 }
 
-.focus-header{
-    padding-top:40px;
-    padding-bottom:40px;
-    background-color:#02214C;
-    color:white;
-    display:flex;
-    height:150px;
-    justify-content:center;
-    padding-left:50px;
-    
-    
-    
+.focus-header {
+    padding: 20px 100px;
+    background-color: #02214C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    align-content: center;
+    gap: 40px;
 }
 
-.focus-header-text{
-    width:min(1200px, 100%);
-    
-    text-align:left;
-    padding-left:50px;
+.focus-header-text {
+    flex: 0 0 50%;
+    text-align: left;
+    padding-top: 10px;
 }
 
-.focus-header-name{
-    color:white;
-    text-align:left;
-    
+.focus-header-name {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    padding-bottom: 20px;
 }
+
+.headerimage-container{
+    flex: 0 0 50%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 10px;
+}
+
+.focusheader-content {
+    list-style-type: disc;
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-family: 'Gotham Book';
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid #0097B2;
+    padding: 20px 0px;
+}
+
 
 .focus-box{
     display: flex;
@@ -63,7 +87,7 @@
     flex-direction:row;
     display:flex;
     align-items:stretch;
-    
+    color:#02214C;
     justify-content: center;
     padding-left:50px;
     padding-top:40px;
@@ -228,120 +252,9 @@ li {
 
 }
 
-.diagram {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
+.diagram-container img{
+   max-height: 500px;
 }
-
-.top-level {
-    display: flex;
-    justify-content: space-around;
-    width: 800px; /* Set to an absolute value */
-    margin-bottom: 40px;
-}
-
-.bottom-level {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 900px; /* Set to an absolute value */
-}
-
-.circle-and-line {
-    position: relative;  /* Establish relative positioning context */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the circle and line */
-}
-
-.circle-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.vertical-line-2 {
-    position: absolute;
-    top: -22px;  /* Adjust this value based on your actual layout */
-    bottom: 52px;  /* Extend upwards */
-    width: 4px;
-    left: 50%;
-    background-color: #02214C;
-    z-index: -1;  /* Send to back */
-}
-
-.vertical-line-container {
-    position: absolute;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.horizontal-line-container {
-    position: absolute;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 646px;
-}
-
-.horizontal-line-container-2{
-        position: absolute;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-
-}
-
-.horizontal-line-1 {
-    width: 690px; /* Set to an absolute value */
-    height: 4px;
-    background-color: #02214C;
-    transform: translate(0, 0);
-}
-
-.horizontal-line-2 {
-    width: 320px; /* Set to an absolute value */
-    height: 4px;
-    background-color: #02214C;
-    transform: translate(0, -120px);
-}
-
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #21479B;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 13px;
-    z-index: 5;
-    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.5);  
-}
-
-.vertical-line {
-    width: 4px;
-    height: calc(100% - 140px); /* Adjust based on total height of the diagram */
-    background-color: #02214C;
-    transform: translate(0px, 0);
-}
-
-.circle-label {
-    font-family: 'Gotham Black';
-}
-
 
 .colab-structure-section-2 {
     display: flex;
@@ -417,22 +330,38 @@ li {
     font-size:1.5rem;
 }
 
+@media (max-width: 1024px) {
+    .focus-header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
 
-/* Mobile Styles */
-/* Mobile Styles */
-/* Mobile Styles */
-/* Mobile Styles */
+    .focus-header-text, .headerimage-container {
+        flex: 0 0 100%;
+    }
+
+    .headerimage-container {
+        height: 300px; /* Adjust height for medium screens */
+    }
+}
+
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
     /* Focus Header */
     .focus-header {
-        padding: 20px;
-        height: auto;
-        justify-content: center;
+        padding: 20px 20px;
+        gap: 20px;
     }
 
-    .focus-header-text {
-        padding-left: 20px;
+    .focus-header-name {
+        font-size: 1.2rem;
+    }
+
+    .headerimage-container {
+        height: 200px; 
+    }
+
+    .focusheader-content {
         font-size: 1.5rem;
     }
 

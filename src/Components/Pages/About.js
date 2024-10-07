@@ -8,7 +8,15 @@ const About = () => {
             <Navbar /> {/* Use the new Navbar component */}
             <div className="focus-header">
                 <div className='focus-header-text'>
-                <h1 className='focus-header-name'> <span style={{ color:"#B25321"}}>About</span> <br/> UT City & Climate CoLab</h1>
+                    <h1 className='focus-header-name'>
+                        <span style={{ color: "#0097B2" }}>About</span> UT City & Climate CoLab
+                    </h1>
+                    <div className="focusheader-content">
+                    Our mission is to foster collaboration between researchers, policymakers, and communities to develop innovative solutions that address climate challenges and build resilient urban environments.
+                    </div>
+                </div>
+                <div className="headerimage-container">
+                <img src={`${process.env.PUBLIC_URL}/images/doggetposter.jpg`} alt="Description" className="header-image" />
                 </div>
             </div>
             <div className="focus-section">
@@ -106,75 +114,26 @@ const About = () => {
 
 
                     </div>
-                     <div className="diagram-container">
+            <div className="diagram-container">
                 <h1 className="diagram-title">CoLab Structure</h1>
-                <div className="diagram">
-                    <div className="top-level">
-                        <div className="circle-container">
-                            <div className="circle"></div>
-                            <p className="circle-label">COA Project Manager</p>
-                        </div>
-                        <div className="circle-container">
-                            <div className="circle"></div>
-                            <p className="circle-label">UT Product Manager</p>
-                        </div>
-                    </div>
-                     <div className="horizontal-line-container-2">
-                        <div className="horizontal-line-2"></div>
+                <img src={`${process.env.PUBLIC_URL}/images/Climate-CoLab Triangle.png`} alt="CoLab Structure Diagram" className="centered-image" />
+            </div>
 
-                    </div>
-                    <div className="horizontal-line-container">
-                        <div className="horizontal-line-1"></div>
-
-                    </div>
-                    <div className="vertical-line-container">
-                        <div className="vertical-line"></div>
-                    </div>
-
-                    <div className="bottom-level">
-                         <div className="circle-and-line">
-                        <div className="vertical-line-2"></div>
-                        <div className="circle-container">
-                            <div className="circle"></div>
-                            <p className="circle-label">Lead UT + COA Core Team</p>
-                            </div>
-                            
+            <div className="colab-structure-section-2">
+                <div className="section-2-content" style={{ background: "rgba(0, 151, 178, 0.2)", padding: "20px 35px" }}>
+                    <h1 className="headshots-title city">City Leadership</h1>
+                    <div className="headshot-row top-row">
+                        <div className="headshot">
+                            <img src={`${process.env.PUBLIC_URL}/images/headshot1.jpg`} alt="Headshot 1" />
+                            <p className="headshot-text">Marc Coudert</p>
                         </div>
-                        <div className="circle-container">
-                            <div className="circle"></div>
-                            <p className="circle-label">Technical Advisory</p>
-                        </div>
-                        <div className="circle-and-line">
-                        <div className="vertical-line-2"></div>
-                        <div className="circle-container">
-                            <div className="circle"></div>
-                            <p className="circle-label">Lead UT + COA Core Team</p>
-                            </div>
-                            
+
+                        <div className="headshot">
+                            <img src={`${process.env.PUBLIC_URL}/images/headshot5.jpg`} alt="Headshot 3" />
+                            <p className="headshot-text">Zach Baumer</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-
-                            <div className="colab-structure-section-2">
-                    <div className="section-2-content" style={{background:"rgba(0, 151, 178, 0.2)", padding:"20px 35px"}}>
-                        <h1 className="headshots-title city">City Leadership</h1>
-                        <div className="headshot-row top-row">
-                            <div className="headshot">
-                               <img src={`${process.env.PUBLIC_URL}/images/headshot1.jpg`} alt="Headshot 1"/>
-                                <p className="headshot-text">Marc Coudert</p>
-                            </div>
-
-                            <div className="headshot">
-                                <img src={`${process.env.PUBLIC_URL}/images/headshot5.jpg`} alt="Headshot 3"/>
-                                <p className="headshot-text">Zach Baumer</p>
-                            </div>
-
-                            
-                        </div>
-                    </div>
                     
                     <div className="section-2-content" style={{background:"antiquewhite"}}>
                         <h1 className="headshots-title ut">UT Leadership</h1>
