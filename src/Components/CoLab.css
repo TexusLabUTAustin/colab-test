@@ -7,10 +7,7 @@
 /* ------------------------------------------------------------ */
 
 .colab-header {
-    height: auto; /* Allow header height to adjust */
-    display: flex;
-    flex-direction: column;
-    position: relative; /* Keep relative positioning for overlays */
+    height: auto; 
 }
 
 .colab-logo{
@@ -30,38 +27,25 @@
 .top-image {
     display: block;
     width: 100%; 
-    height: 80vh;
+    height: 65vh;
     object-fit: cover;
     object-position: bottom;
     background-color: #E8EBEF;
-    transition: transform 0.5s ease-in-out;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
 }
 
 .text-overlay {
     position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    max-width: 90%;
-    text-align: center;
+    top: 18%;
+    z-index: 1;
+    max-width: 40%;
+    text-align: left;
+    padding-left: 120px;
 }
 
 .text-overlay h1 {
     font-size: 2rem;
     margin: 0;
     font-family: 'Gotham Book';
-    color: white;
     font-weight: bold;
 }
 
@@ -88,28 +72,28 @@
 .intro-container {
     display: flex;
     flex-direction: row;
-    align-items: stretch; /* Stretch items to fill the container */
-    gap: 50px; /* Space between elements */
-    padding: 80px; /* Overall padding */
-    background-color: #E8EBEF; /* Background color */
+    align-items: stretch;
+    gap: 50px;
+    padding: 80px;
+    background-color: #E8EBEF;
 }
 
 .introcover {
-    flex: 1; /* Allow it to grow and fill space */
+    flex: 1;
 }
 
 .introcover img {
-    width: 100%; /* Make the image responsive */
-    max-width: 600px; /* Set a max width to limit size */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     border-radius: 10px;
 }
 
 .intro-box {
-    flex: 1; /* Allow it to grow and fill space */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between elements in the intro box */
+    gap: 20px;
 }
 
 .Introduction{
@@ -178,7 +162,7 @@
     color: #fff;
     font-size: 2.6rem;
     margin: 0;
-    padding-left: 10px;
+    padding: 20px;
 }
 
 .Problems h2 {
@@ -271,7 +255,6 @@ color: green;
 /* ------------------------------------------------------------ */
 
 /* Urgency */
-
 .urgency {
     height: auto;
     display: flex;
@@ -281,15 +264,11 @@ color: green;
     min-height: 600px;
 }
 
-.urgency-title {
-    width: 100%;
-}
-
 .urgency-content h1 {
     font-size: 2.6rem;
     margin: 0;
     padding: 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .urgency-content {
@@ -315,7 +294,7 @@ color: green;
     margin: 15px;
     background-size: cover;
     background-position: center;
-    transition: all 0.3s;
+    transition: transform 0.3s;
     cursor: pointer; 
 }
 
@@ -327,13 +306,8 @@ color: green;
     transition: color 0.3s;
 }
 
-.urgencycard:hover {
-    background-color: transparent; 
+.urgencycard:hover .urgency-card-content {
     color: white;
-}
-
-.urgencycard:hover::after {
-    opacity: 1;
 }
 
 .urgencycard::after {
@@ -344,14 +318,15 @@ color: green;
     right: 0;
     bottom: 0;
     background-color: rgba(28, 53, 131, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
     z-index: 0;
 }
 
-.urgencycard:hover .urgency-card-content {
-    color: white;
+.urgencycard:hover::after {
+    transform: translateY(-100%); /* Slide out effect */
 }
+
 
 
 /* ------------------------------------------------------------ */
@@ -387,6 +362,43 @@ color: green;
     font-weight: bold;
 }
 
+.quote-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    max-width: 90%;
+    text-align: center;
+
+}
+
+.quote-overlay h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Gotham Book';
+    color: white;
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.quote-image {
+    display: block;
+    width: 100%; 
+    height: 65vh;
+    object-fit: cover;
+    object-position: bottom;
+    background-color: #E8EBEF;
+}
 
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
@@ -529,8 +541,13 @@ color: green;
     }
    
     .top-image {
+        height: 40vh;
+    }
+
+    .quote-image {
         height: 50vh;
     }
+
 
     .caraousel-scroll-button {
         padding: 8px;
@@ -538,6 +555,11 @@ color: green;
     
     .text-overlay h1 {
         font-size: 1.3rem;
+    }
+
+    .text-overlay {
+        top: 7%;
+        padding-left: 30px;
     }
 
     .intro-box h1{
@@ -549,10 +571,6 @@ color: green;
         font-size: 1rem;
     }
 
-    .introcover img {
-        width: 70vw;
-    }
-
     /* Adjusting Problems section */
 
     .Problems{
@@ -561,7 +579,7 @@ color: green;
 
     .Problems h1 {
         font-size: 2rem;
-        padding: 40px 20px;
+        padding: 0;
     }
 
     .problem-img {
@@ -603,6 +621,7 @@ color: green;
     .intro-container {
         flex-direction: column;
         align-items: center;
+        padding: 30px;
     }
 
     /* Adjusting Urgency section */
@@ -621,9 +640,19 @@ color: green;
         margin: 0 20px;
     }
 
+    .urgency-content h1{
+        text-align: center;
+        padding: 0;
+        font-size: 2rem;
+    }
+
     .urgency {
         padding: 50px 20px;
         min-height: 500px;
+    }
+
+    .urgency-container {
+        justify-content: center;
     }
 
     /* Adjusting Quote section */
@@ -631,6 +660,9 @@ color: green;
         height: 50vh;
     }
 
+    .quote-overlay h1 {
+        font-size: 1.5rem;
+    }
     .quote-name {
         font-size: 1rem; /* Adjust size as needed */
     }

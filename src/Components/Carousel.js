@@ -74,9 +74,9 @@ const Carousel = ({ isQuote }) => {
 
     return (
         <div className="carousel">
-            <img src={currentImage.src} className="top-image" alt="Carousel" />
+            <img src={currentImage.src} className="quote-image" alt="Carousel" />
             <div className="overlay" style={{ backgroundColor: isQuote ? currentImage.overlayColor : 'rgba(0, 0, 0, 0.4)' }}></div>
-            <div className="text-overlay" style={{ color: isQuote ? 'white' : currentImage.color }}>
+            <div className="quote-overlay" style={{ color: isQuote ? 'white' : currentImage.color }}>
                 <h1>{currentImage.text}</h1>
                 {isQuote && (
                     <div className="quote-details">

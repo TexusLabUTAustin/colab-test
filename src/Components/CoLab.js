@@ -45,9 +45,12 @@ const CoLab = () => {
 {/* Header  */}
 
         
-        {isMobile ? <NavbarHero /> : <Navbar />}
         <div className="colab-header">
-        <Carousel isQuote={false} />
+        {isMobile ? <NavbarHero /> : <Navbar />}
+        <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
+            <div className="text-overlay">
+                <h1>Empower city departments and the community with climate data and tools</h1>
+            </div>
         </div>
 
 {/* ------------------------------------------------------------------------------------------*/}
