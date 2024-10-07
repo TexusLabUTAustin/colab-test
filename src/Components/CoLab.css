@@ -304,7 +304,6 @@ color: green;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 20px;
-    gap: 20px;
 }
 
 .urgencycard {
