@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Maintenance.css';
 import { Link } from 'react-router-dom';
-import Navbar from '../Navbar'; // Import the Navbar component
 import yaml from 'js-yaml'; // Import js-yaml library
 import ProjectCard from '../ProjectCard';
 
@@ -29,7 +28,6 @@ const Maintenance  = ({ ProjectList }) =>  {
 
   return (
     <div>
-      <Navbar /> {/* Add the Navbar component */}
       <div class="header-title">
         <h1>Projects</h1>
       </div>

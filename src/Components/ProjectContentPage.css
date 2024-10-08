@@ -221,9 +221,31 @@
 
 /* Responsive styles */
 @media (max-width: 767px) {
+  .back-button {
+      display: none;
+    }
+
   .content-page {
-    flex-direction: column;
-    align-items: center; /* Center align content */
+      flex-direction: column;
+      overflow: hidden;
+  }
+  
+  .contentimage-container {
+      margin: 0;
+  }
+  
+  .contentmain-img {
+      max-width: 300px;
+  }
+
+  .project-button {
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -25%);
+  }
+
+  .contentimage-overlay {
+    width: 50%;
   }
 
   .content-page h3 {

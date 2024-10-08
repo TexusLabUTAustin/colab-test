@@ -8,6 +8,7 @@ import ScrollToTop from './Components/ScrollToTop';
 import Contact from './Components/Pages/Contact';
 import Maintenance from './Components/Pages/Maintenance';
 import NavbarHero from './Components/NavbarHero';
+import Navbar from './Components/Navbar'; // Import the Navbar component
 import yaml from "js-yaml"; // Import js-yaml library
 
 import ProjectContentPage from './Components/ProjectContentPage';
@@ -15,6 +16,13 @@ import ProjectContentPage from './Components/ProjectContentPage';
 function App() {
   const [projects, setProjects] = useState([]);
   const [peopleProjects, setPeopleProjects] = useState({});
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
 
   useEffect(() => {
     // Fetch the YAML data from your file
@@ -56,6 +64,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="App">
+      {isMobile ? <NavbarHero /> : <Navbar />}
         <Routes>
           <Route path="/" element={<CoLab />}/>
           <Route path="/about" element={<About />}/>

@@ -9,11 +9,7 @@
   
   @media (max-width: 767px) {
     .card-grid {
-    margin-top: 5.28vh;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center; */
+    margin-top: 0;
   }
   
   }

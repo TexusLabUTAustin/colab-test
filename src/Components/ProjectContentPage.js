@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './ProjectContentPage.css'; // Import the CSS file
 import { Link } from 'react-router-dom';
 import { collaboratorData, contactData } from './ProjectData';
-import Navbar from './Navbar';
 
 
 function ProjectContentPage({ project, projectList }) {
@@ -43,7 +42,6 @@ function ProjectContentPage({ project, projectList }) {
 
   return (
     <div>
-      <Navbar />
       <div className="top-border"></div>
       <div className="content-page">
         <div className="contentimage-container">

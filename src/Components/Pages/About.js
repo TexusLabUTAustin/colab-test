@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Navbar from '../Navbar'; // Import the new Navbar component
 import './About.css';
 
 const dropdownData = [
@@ -53,7 +52,6 @@ const dropdownData = [
 const About = () => {
     return(
         <div className="focus">
-            <Navbar /> {/* Use the new Navbar component */}
             <div className="focus-header">
                 <div className='focus-header-text'>
                     <h1 className='focus-header-name'>
@@ -95,73 +93,7 @@ const About = () => {
             {/* ------------------------------------------------------------------------------------------*/}
             {/* ------------------------------------------------------------------------------------------*/}
             {/* ------------------------------------------------------------------------------------------*/}
-            {/* Project Cards  */}
-
-            {/* <div className="colab-ongoing" style={{
-
-            }}>
-                <div className="ongoing-header">
-                    <h1 className="ongoing-header-title">Planning and Implementation</h1>
-                </div>
-
-                <div className="ongoing-cards">
-
-                    <div className="colab-ongoing-card">    
-                        <div className="colab-section">
-                            <div className="circle-symbol">
-                                <img src={`${process.env.PUBLIC_URL}/images/Climate.png`} />
-                            </div>
-                            <h1 className="ongoing-title">CLIMATE ASSESSMENTS</h1>
-                            <p>Climate trends, patterns, changes, event summaries <br /> <br /> Case studies for high impact events. <br /> <br /> Future Projections </p>
-                        </div>
-
-                    </div>
-
-                    <div className="colab-ongoing-card">
-                        <div className="colab-section">
-                            <div className="circle-symbol">
-                                <img src={`${process.env.PUBLIC_URL}/images/Calendar.png`} />
-                            </div>
-                            <h1 className="ongoing-title">DECISION CALENDARS</h1>
-                            <p>Work with City operations <br /> <br /> Document What climate information is needed, Who needs it, When, Why? <br /> <br /> How accurate, and How will it be used?</p>
-                        </div>
-                    </div>
-
-                    <div className="colab-ongoing-card">
-                        <div className="colab-section">
-                            <div className="circle-symbol">
-                                <img src={`${process.env.PUBLIC_URL}/images/Policy.png`} /> </div>
-                            <h1 className="ongoing-title">POLICY BRIEFS</h1>
-                            <p>Map networks for outreach, programs, and community organizations links <br /> <br /> Connect climate modeling data products to social and policy science, social vulnerability </p>
-                        </div>
-                    </div>
-
-
-                    <div className="colab-ongoing-card">
-                        <div className="colab-section">
-                            <div className="circle-symbol">
-                                <img src={`${process.env.PUBLIC_URL}/images/City.png`} />
-                            </div>
-                            <h1 className="ongoing-title">CITY WIDE DATA PRODUCTS</h1>
-                            <p>High resolution data based on different department needs <br /> <br /> Local-scale climate products <br /> <br /> Combine Data + Lived Experience</p>
-                        </div>
-                    </div>
-
-
-
-                    <div className="colab-ongoing-card">
-                        <div className="colab-section">
-                            <div className="circle-symbol">
-                                <img src={`${process.env.PUBLIC_URL}/images/Data.png`} />
-                            </div>
-                            <h1 className="ongoing-title">SYNTHESIS STUDIES</h1>
-                            <p>Cool Pavement <br /> <br /> Fire, flood, hotspots <br /> <br /> If-then assessments for future city growth and climate <br /> <br /> Classroom and public education</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div> */}
+            
 
             <div className="planning-implementation">
                 <div className="ongoing-header">

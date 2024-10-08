@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Contact.css';
-import Navbar from '../Navbar'; // Import the Navbar component
 
 const Contact = () => {
     return (
         <div>
-            <Navbar /> {/* Add the Navbar component */}
         <div className="header-banner">
             <h1>Let's Connect!</h1>
         </div>

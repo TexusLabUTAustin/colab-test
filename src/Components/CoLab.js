@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./CoLab.css";
 import Timeline from './Timeline';
 import { Helmet } from 'react-helmet';
-import NavbarHero from './NavbarHero';
-import Navbar from './Navbar'
 import Carousel from './Carousel';
 
 
@@ -18,13 +16,6 @@ const timelineEvents = [
 ];
 
 const CoLab = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   return (
     <div className="colab-main">
@@ -46,7 +37,6 @@ const CoLab = () => {
 
         
         <div className="colab-header">
-        {isMobile ? <NavbarHero /> : <Navbar />}
         <img src={`${process.env.PUBLIC_URL}/images/downtown-austin-skyline-copy.jpg`} className="top-image"/> 
             <div className="text-overlay">
                 <h1>Empower city departments and the community with climate data and tools</h1>
