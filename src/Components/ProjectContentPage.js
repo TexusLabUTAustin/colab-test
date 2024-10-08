@@ -13,6 +13,10 @@ function ProjectContentPage({ project, projectList }) {
 
   const collaborators = project.Collaborators.split(',').map((name) => name.trim());
   const contacts = project.contact.split(',').map((contactName) => contactName.trim());
+  const validContacts = contacts.filter(contact => {
+    const contactName = contactData.find(member => member.name === contact);
+    return contactName && contactName.email; // Keep only valid contacts with an email
+  });
 
   const scrollRight = () => {
     const container = document.querySelector('.project-cards');
@@ -99,7 +103,7 @@ function ProjectContentPage({ project, projectList }) {
             </>
           )}
 
-          {contacts.length > 1 && (
+          {validContacts.length > 0 && (
             <>
             <br /><br />
               <div className='contactcontainer'>
@@ -110,16 +114,19 @@ function ProjectContentPage({ project, projectList }) {
 
                       const contactName = contactData.find(member => member.name === contact);
 
-                      const contactEmail = contactName ? contactName.email : "email@colab.com";
+                      if (!contactName || !contactName.name) {
+                        return null; 
+                      }
 
+                      const contactEmail = contactName.email;
                       return (
                         <>
                           <div key={index} className="contactcard">
                             <div className="contactinfo">
-                              <span>Name: {contact}</span>
+                              <span style ={{fontFamily: "Gotham Black"}}>{contact}</span>
                             </div>
                             <div className="contactinfo">
-                              <span>Email: {contactEmail}</span>
+                              <span  style ={{paddingTop:"5px"}}>{contactEmail}</span>
                             </div>                 
                           </div>
                         </>
