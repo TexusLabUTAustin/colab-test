@@ -16,7 +16,9 @@ function ProjectCardContent({ title, pictureSrc, content, reportName, buttonText
 
     <div className="cards">
       <div className="image-container">
-        <img src={process.env.PUBLIC_URL + "/images/" + pictureSrc} alt={title} className="card-picture" />
+      <Link to={`/content/${targetSection}`}>
+      <img src={process.env.PUBLIC_URL + "/images/" + pictureSrc} alt={title} className="card-picture" />
+      </Link>
       </div>
       <div className="card-content">
         <h2>{title}</h2>

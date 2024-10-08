@@ -55,7 +55,7 @@ const About = () => {
             <div className="focus-header">
                 <div className='focus-header-text'>
                     <h1 className='focus-header-name'>
-                        <span style={{ color: "#0097B2" }}>About</span> UT City & Climate CoLab
+                        <span style={{ color: "#0097B2" }}>About</span> UT-City Climate CoLab
                     </h1>
                     <div className="focusheader-content">
                     Our mission is to foster collaboration between researchers, policymakers, and communities to develop innovative solutions that address climate challenges and build resilient urban environments.
@@ -115,7 +115,7 @@ const About = () => {
                                     {item.options.map((option, idx) => (
                                         <div className="dropdown-item" key={idx}>
                                             <span className="dropdown-text">{option.text}</span>
-                                            <a href={option.link} className="read-more">Read More</a>
+                                            {/* <a href={option.link} className="read-more">Read More</a> */}
                                         </div>
                                     ))}
                                 </div>

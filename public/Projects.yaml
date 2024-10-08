@@ -24,8 +24,8 @@
   reportName: Climate_report.pdf
   contact: 'Manmeet Singh, Dev Niyogi, Marc Coudert'
 
-- title: Austin Summer Outlook
-  targetSection: austin-summers-outlook
+- title: Austin Seasonal Outlook
+  targetSection: austin-seasonal-outlook
   shortContent: >-
     The Austin Summer Outlook 2024 provides a forecast of expected summer
     weather patterns, including anticipated heatwaves, temperature trends, and
@@ -176,4 +176,24 @@
   pictureSrc: heat_playbookcover.png
   reportName: ''
   contact: 'Sasanka Talukdar, Shyama Mohanty, Alka Tiwari, Rashith'
+
+- title: AusTWIN Austin Digital Twins
+  targetSection: AusTWIN-digital-twins
+  shortContent: >-
+    The AusTwin project aims to create a digital twin of Austin that captures
+    and vizualises the interactions between weather variables and infracture to
+    help observres better understand the data. 
+  longContent: >-
+    The AusTwin project focuses on utilizing open source datasets and creating a
+    digital gateway for visual representation of data. This in turn helps us
+    understand the interactions between weather and infrastructure. By employing
+    the digital twin framework in the development of this project, our team aims
+    to provide an interactive and dynamic platform that simulates real world
+    interactions and helps in  optimized decision-making. For more information,
+    please contact Dev Niyogi, Junfeng Jiao, or Aditya Patel.
+  Collaborators: ''
+  projectPictureSrc: hurricaneHelene.jpg
+  pictureSrc: hurricaneHelene.jpg
+  reportName: ''
+  contact: ''
 

@@ -5,7 +5,7 @@
 }
 
 .focus-header {
-    padding: 20px 100px;
+    padding: 20px 120px;
     background-color: #02214C;
     color: white;
     display: flex;
@@ -14,10 +14,11 @@
     max-width: 100%;
     align-content: center;
     gap: 40px;
+    
 }
 
 .focus-header-text {
-    flex: 0 0 50%;
+    flex: 0 0 45%;
     text-align: left;
     padding-top: 10px;
 }
@@ -37,7 +38,7 @@
 }
 
 .header-image {
-    width: 100%;
+    width: 75%;
     height: auto;
     position: absolute; 
     top: 50%; 
@@ -73,6 +74,7 @@
 
 .ut-focus-box{
     padding-right:80px;
+    padding-left:50px;
 }
 
 .city-focus-box{
@@ -86,9 +88,8 @@
     flex-direction:row;
     display:flex;
     align-items:stretch;
-    color:#02214C;
-    justify-content: space-around;
-    padding-left: 55px;
+    justify-content: center;
+    padding-left:50px;
     padding-top:40px;
 }
 
@@ -336,12 +337,20 @@ li {
 @media screen and (max-width: 768px) {
     /* Focus Header */
     .focus-header {
-        padding: 20px 20px;
+        padding: 30px;
         gap: 20px;
     }
 
     .focus-header-name {
         font-size: 1.2rem;
+    }
+
+    .header-image {
+        width: 100%;
+        position: relative;
+        top: 0; 
+        left: 0; 
+        transform: translate(0%, 0%);
     }
 
     .headerimage-container {
@@ -371,6 +380,7 @@ li {
     /* Ongoing Section */
     .planning-implementation {
         flex-direction: column;
+        gap: 10px;
     }
 
     .ongoing-header{

@@ -21,7 +21,7 @@ const NavbarHero = () => {
                 <div className="navbar-content">
                     <div className="navbar-left">
                         <img src={`${process.env.PUBLIC_URL}/images/colablogo_icon.png`} alt="Logo" className="navbar-icon" />
-                        <h1 className="navbar-title">UT City - Climate Colab</h1>
+                        <h1 className="navbar-title">UT-City Climate Colab</h1>
                     </div>
                     <div className='navbarbtn'>
                         <button className="navbar-toggle-hero" onClick={toggleNavbar} aria-label="Toggle navigation">

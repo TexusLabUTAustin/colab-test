@@ -1,37 +1,33 @@
 .header-banner {
-    padding: 40px 180px 20px;
-    text-align: center;
+    padding: 40px 120px;
+    text-align: left;
 }
 
 .header-banner h1 {
     color: #0097B2;
-    text-align: start;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: 'Gotham Black';
-    position: relative;
 }
 
 .info-container {
     display: flex;
-    margin-top: 20px;
+    flex-direction: row;
+    padding:0 120px;
 }
 
 .info-left {
     flex: 2;
     margin-right: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 .info-img {
     flex: 1;
-    margin-right: 60px;
 }
-    
 
 .info-box {
-    padding: 20px 180px;
+    padding: 20px 0;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .info-heading {
@@ -51,8 +47,34 @@
 }
 
 .contact-line {
-    width: 45vw;
+    width: 75%;
     height: 1px;
     background-color: #C05A26;
-    margin: 0 0 20px 180px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .header-banner {
+        padding: 30px;
+    }
+
+    .header-banner h1 {
+        font-size: 2rem;
+    }
+
+    .info-left {
+        padding-left: 20px 30px;
+    }
+
+    .info-container {
+        padding: 0 30px;
+        flex-direction: column;
+    }
+
+    .info-heading {
+        font-size: 1.2rem;
+    }
+
+    .contact-line {
+        width: 100%;
+    }
 }

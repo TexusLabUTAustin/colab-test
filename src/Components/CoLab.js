@@ -127,7 +127,7 @@ const CoLab = () => {
                           </div>
                           <div className="blob-hover">
                               <h2>Stakeholder<br/>Partnerships</h2>
-                              <p>UT/ City climate research projects need stakeholder partnerships to be successful.</p>
+                              <p>UT-City climate research projects need stakeholder partnerships to be successful.</p>
                           </div>
                       </div>
                   </div>
@@ -182,9 +182,6 @@ const CoLab = () => {
         <div className='quote'>
         <Carousel isQuote={true} />
         </div>
-
-
-
 
     </div>
 
