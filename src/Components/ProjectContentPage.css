@@ -156,7 +156,8 @@
   transition: transform 0.3s ease; /* Smooth transition */
   text-decoration: none;
   color: inherit;
-  max-width: 250px;
+  max-width: 300px;
+  max-height: 250px;
 }
 
 .project-card:hover {

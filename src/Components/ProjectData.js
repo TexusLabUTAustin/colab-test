@@ -68,17 +68,17 @@ export const contactData
     name: "Alka Tiwari",
     email: 'alka.tiwari@jsg.utexas.edu'
   },
-  // {
-  //   name: "Rashith",
-  //   email: ''
-  // },
+  {
+    name: "Rashith Mallesh",
+    email: 'rm65238@my.utexas.edu'
+  },
   {
     name: "Trevor Brooks",
     email: 'tb35259@my.utexas.edu'
   },
   {
     name: "Angela Johnson",
-    email: 'Angela.Johnson@austin.utexas.edu'
+    email: 'Angela.N.Johnson@austintexas.gov'
   },
   {
     name: "Naveen Sudharsan",
@@ -92,14 +92,14 @@ export const contactData
     name: "Braniff Davis",
     email: 'braniff.davis@austintexas.gov'
   },
-  // {
-  //   name: "Justice Jones",
-  //   email: ''
-  // },
-  // {
-  //   name: "Dariya Fallon",
-  //   email: ''
-  // },
+  {
+    name: "Justice Jones",
+    email: 'Justice.Jones@austintexas.gov'
+  },
+  {
+    name: "Dariya Fallon",
+    email: 'dariyafallon@utexas.edu'
+  },
   // {
   //   name: "Patricia House",
   //   email: ''
@@ -109,9 +109,13 @@ export const contactData
   //   email: ''
   // },
   // {
-  //   name: "Edward Hooks",
-  //   email: ''
-  // },
+    //   name: "Heidi Kasper",
+    //   email: ''
+    // },
+  {
+    name: "Maddy Richter-Atkinson",
+    email: 'madeleine.mra@utexas.edu'
+  },
   {
     name: "Alexia Leclercq",
     email: 'alexia.leclercq@utexas.edu'
