@@ -198,8 +198,8 @@ li {
 }
 
 .dropdown-card:hover .dropdown-content {
-    max-height: 200px; /* Adjust based on your content size */
-    padding: 10px 30px; /* Show padding when expanded */
+    max-height: 300px;
+    padding: 10px 30px;
 }
 
 .dropdown-item {
@@ -403,6 +403,20 @@ li {
 
     .dropdown-item .read-more {
         margin-top: 5px;
+    }
+
+    .dropdown-card {
+        cursor: pointer; /* Ensure cursor indicates clickable area */
+    }
+
+    .dropdown-content {
+        max-height: 0;
+        transition: max-height 0.5s ease, padding 0.5s ease;
+    }
+
+    .dropdown-card.active .dropdown-content {
+        max-height: 300px;
+        padding: 10px 30px;
     }
 
     /* Diagram */
