@@ -37,6 +37,7 @@
   font-family: "Gotham Book";
   font-weight: bold;
   margin-bottom: 1rem;
+  display: block;
 }
 
 .contentimage-container {
@@ -181,6 +182,16 @@
   overflow: hidden;
 }
 
+.next-project-container {
+  display: none;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-project-button{
+  text-decoration: none;
+}
+
 .scroll-button {
   border: none;
   cursor: pointer;
@@ -219,6 +230,10 @@
   font-family: "Gotham Book";
 }
 
+.other-projects-header{
+  display: block;
+}
+
 /* Responsive styles */
 @media (max-width: 767px) {
   .back-button {
@@ -226,8 +241,10 @@
     }
 
   .content-page {
-      flex-direction: column;
-      overflow: hidden;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    max-width: 100%;
   }
   
   .contentimage-container {
@@ -235,45 +252,64 @@
   }
   
   .contentmain-img {
-      max-width: 300px;
+      max-width: 225px;
   }
 
   .project-button {
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -25%);
   }
 
   .contentimage-overlay {
-    width: 50%;
   }
 
   .content-page h3 {
-    margin-top: 1.5rem; /* Adjust for smaller screens */
-    margin-bottom: 1.5rem; /* Adjust for smaller screens */
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
   }
 
+  .content-page h2 {
+    text-align: left;
+}
+
   .content-text {
-    margin-left: 0; /* Remove left margin */
-    width: 90%; /* Make width more flexible */
-    text-align: center; /* Center text */
+    margin-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .description{
+    text-align: left;
   }
 
   .collabcard {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr;
   }
 
   .project-card {
-    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    flex: 1 1 calc(50% - 20px);
   }
 
   .contactcardgrid {
     grid-template-columns: 1fr;
   }
+
+  .project-cards-container{
+    display:none;
+  }
+  .next-project-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .other-projects-header{
+    display: none;
+  }
+  
 }
 
 @media (max-width: 1024px) {
   .project-card {
-    flex: 1 1 calc(50% - 10px); /* Two cards per row on tablets */
+    flex: 1 1 calc(50% - 10px); 
   }
 }

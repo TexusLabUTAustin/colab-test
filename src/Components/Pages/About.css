@@ -381,10 +381,15 @@ li {
     .planning-implementation {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 
     .ongoing-header{
         padding: 0 50px; 
+    }
+
+    .ongoing-header-title {
+        text-align: center;
     }
 
     .dropdown-title {

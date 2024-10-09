@@ -42,22 +42,6 @@
   reportName: SummerOutlook.pdf
   contact: ''
 
-- title: Heat Resilience Playbook
-  targetSection: heat-resilience-playbook
-  shortContent: >-
-    The Austin Heat Resilience Playbook provides strategies and actions to
-    combat extreme heat, focusing on community preparedness and infrastructure
-    improvements to enhance the city's resilience.
-  longContent: >-
-    The Austin Heat Resilience Playbook provides strategies and actions to
-    combat extreme heat, focusing on community preparedness and infrastructure
-    improvements to enhance the city's resilience.
-  Collaborators: ''
-  projectPictureSrc: heatcover-report.png
-  pictureSrc: heat_playbookcover.png
-  reportName: heat_playbook.pdf
-  contact: ''
-
 - title: Passive House Project
   targetSection: passive-house-project
   shortContent: >-
@@ -114,11 +98,27 @@
     based blind experiement 5. A survey of local residents. This study is
     currently ongoing and will continue to be updated as more data becomes
     available.
-  Collaborators: Transportation and Public Works
+  Collaborators: 'Transportation and Public Works'
   projectPictureSrc: thermal-1.jpg
   pictureSrc: thermal-1.jpg
   reportName: ''
   contact: 'Trevor Brooks, Angela Johnson, Naveen Sudharsan'
+
+- title: Heat Resilience Playbook
+  targetSection: heat-resilience-playbook
+  shortContent: >-
+    The Austin Heat Resilience Playbook provides strategies and actions to
+    combat extreme heat, focusing on community preparedness and infrastructure
+    improvements to enhance the city's resilience.
+  longContent: >-
+    The Austin Heat Resilience Playbook provides strategies and actions to
+    combat extreme heat, focusing on community preparedness and infrastructure
+    improvements to enhance the city's resilience.
+  Collaborators: ''
+  projectPictureSrc: heatcover-report.png
+  pictureSrc: heat_playbookcover.png
+  reportName: heat_playbook.pdf
+  contact: ''
 
 - title: Decision Calendars
   targetSection: decision-calendars
@@ -147,7 +147,7 @@
     information collectively will assist in helping broaden the understanding of
     climate data needs, customizing data products, and helping local decision
     making and planning.
-  Collaborators: Wildfire Division
+  Collaborators: 'Wildfire Division'
   projectPictureSrc: decision_calendar_cover.png
   pictureSrc: decision_calendar_cover.png
   reportName: ''
@@ -172,8 +172,8 @@
     predictability of these high impact weather events pose challenges which
     needs continous research analyzing different feedback systems.
   Collaborators: 'TACC,AOML/NOAA,INCOIS India,NIT-R India'
-  projectPictureSrc: heat_playbookcover.png
-  pictureSrc: heat_playbookcover.png
+  projectPictureSrc: hurricaneHelene.jpg
+  pictureSrc: hurricaneHelene.jpg
   reportName: ''
   contact: 'Sasanka Talukdar, Shyama Mohanty, Alka Tiwari, Rashith'
 
@@ -192,8 +192,48 @@
     interactions and helps in  optimized decision-making. For more information,
     please contact Dev Niyogi, Junfeng Jiao, or Aditya Patel.
   Collaborators: ''
-  projectPictureSrc: hurricaneHelene.jpg
-  pictureSrc: hurricaneHelene.jpg
+  projectPictureSrc: UTwin_dataview.png
+  pictureSrc: UTwin_dataview.png
   reportName: ''
-  contact: ''
+  contact: 'Aditya Patel,Dev Niyogi,Junfeng Jiao'
+
+- title: >-
+    ATX CA3TCH UP: Climate Atlas for Accountability and Advocacy Strategies
+    through Co-production with Historically Underserved Community Partners
+  targetSection: ATX-CA3TH-UP
+  shortContent: >-
+    The NASA EEJ project (or climate atlas project) combines community
+    experiences with Earth Observation data to create a "Climate Atlas," to
+    advance equity and environmental justice in Austin. The Atlas features
+    interactive geospatial layers showing multi-hazard risks and social
+    vulnerability, local policy information from 2010-2024, and an "Advocacy
+    Toolkit" for community action. This comprehensive tool aims to empower
+    community groups with better environmental data to effectively advocate for
+    addressing neighborhood-specific environmental hazards.
+  longContent: >-
+    For community groups to advance the arguments and create effective pressure
+    points with ATX they need better environmental data. This project combines
+    local community experiences and Earth Observation (EO) data to provide a
+    more effective means for the city to undertake EJ decisions. Our team from
+    GAVA, the City of Austin, and the University of Texas at Austin (UT) is
+    integrating satellite data products to advance equity and environmental
+    justice. From this work, we will develop a “Climate Atlas.” Concurrently, we
+    are conducting an extensive analysis of city council resolutions so that the
+    team has a better sense of the underlying inputs and proposed actions
+    related to city resolutions related to climate extremes. At the intersection
+    of the climate atlas and the policy analysis will be an “advocacy and
+    accountability” guide for community groups. We refer to this piece as the
+    “Advocacy Toolkit.” The Austin Climate Atlas (“Atlas”) incorporates three
+    components: (1) interactive geospatial data layers to explore multi-hazard
+    risk exposure alongside social vulnerability data; (2) interactive policy
+    information spanning over a decade of extreme growth and extreme weather
+    from 2010 to 2024; and, (3) a toolkit that allows communities to use the
+    Atlas to advocate for actions to address environmental hazards specific to
+    their neighborhood.
+  Collaborators: 'GAVA'
+  projectPictureSrc: heat_playbookcover.png
+  pictureSrc: heat_playbookcover.png
+  reportName: ''
+  contact: 'Patrick Bixler,Maddy Richter-Atkinson, Deidra Miniard'
+
 

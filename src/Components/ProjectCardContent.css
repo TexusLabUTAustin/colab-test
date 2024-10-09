@@ -1,8 +1,7 @@
 .cards {
   border-top: 1px solid #0097B2;
-  padding: 10px;
+  padding: 10px 100px;
   margin: 10px auto;
-  width: 91vw;
   height: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -57,16 +56,20 @@
       flex-direction: column;
       width: 100vw;
       gap:0;
+      padding: 30px;
   }
 
   .image-container {
       max-width: 100%; 
-      padding: 20px 30px 0;
   }
+
+  .image-container img {
+    height: 250px;
+}
 
   .card-content {
       width: 100%; 
-      padding: 30px 30px 0 30px;
+      padding: 0;
   }
 
   .cards .card-content h2 {

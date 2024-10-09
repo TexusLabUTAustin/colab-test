@@ -558,8 +558,9 @@ color: green;
     }
 
     .text-overlay {
-        top: 12%;
+        top: 17%;
         padding-left: 30px;
+        max-width: 57%;
     }
 
     .intro-box h1{
@@ -661,7 +662,7 @@ color: green;
     }
 
     .quote-overlay h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .quote-name {
         font-size: 1rem; /* Adjust size as needed */

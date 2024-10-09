@@ -57,7 +57,7 @@ const CoLab = () => {
                           <h1>What is <br />the <span style={{ color: '#B25321' }}>CoLab?</span></h1>
                       </div>
                       <div >
-                          <p>The UT City & Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
+                          <p>The UT-City Climate CoLab is a collaborative initiative based at the University of Texas at Austin focused on addresing climate change and its impact on urban areas. It brings together researchers, policymakers, and community members to develop innovative solutions and strategies for building climate-resilient cities.</p>
                       </div>
                       <div class="btn">
                       <a href={`/about`} className="about-button" target="_blank" rel="noopener noreferrer">

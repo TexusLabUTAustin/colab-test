@@ -35,6 +35,10 @@ export const collaboratorData
   {
     name:'NIT-R India',
     image: process.env.PUBLIC_URL + "/images/NITRlogo.png"
+  },
+  {
+    name:'GAVA',
+    image: process.env.PUBLIC_URL + "/images/GAVAlogo.png"
   }
 ]
 
@@ -112,4 +116,21 @@ export const contactData
     name: "Alexia Leclercq",
     email: 'alexia.leclercq@utexas.edu'
   },
+  {
+    name: "Aditya Patel",
+    email: 'aditya.patel@utmail.utexas.edu'
+  },
+  {
+    name: "Junfeng Jiao",
+    email: 'jjiao@austin.utexas.edu'
+  },
+  {
+    name: "Patrick Bixler",
+    email: 'rpbixler@austin.utexas.edu'
+  },
+  {
+    name: "Deidra Miniard",
+    email: 'deidra.miniard@austin.utexas.edu'
+  },
 ]
+

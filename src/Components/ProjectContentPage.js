@@ -11,12 +11,19 @@ function ProjectContentPage({ project, projectList }) {
     return <div>Project not found.</div>;
   }
 
-  const collaborators = project.Collaborators.split(',').map((name) => name.trim());
+  const collaboratorsArray = project.Collaborators ? project.Collaborators.split(',').map((name) => name.trim()) : '';
   const contacts = project.contact.split(',').map((contactName) => contactName.trim());
+
   const validContacts = contacts.filter(contact => {
     const contactName = contactData.find(member => member.name === contact);
     return contactName && contactName.email; // Keep only valid contacts with an email
   });
+
+  // Find the current project index
+  const currentIndex = projectList.findIndex(p => p.title === project.title);
+  
+  // Get the next project
+  const nextProject = projectList[currentIndex + 1] || projectList[0];
 
   const scrollRight = () => {
     const container = document.querySelector('.project-cards');
@@ -75,15 +82,15 @@ function ProjectContentPage({ project, projectList }) {
             </a>
           </div>
           <h2>{project.title}</h2>
-          <p className="Description">{project.longContent}</p>
-          {collaborators.length > 1 && (
+          <p className="description">{project.longContent}</p>
+          {collaboratorsArray.length >= 1 && (
             <>
             <br /><br />
               <div className='collabcard-container'>
                 <h3>Lead Partners</h3>
                 <div class="collabcard">
                   {
-                    collaborators.map((collaborator, index) => {
+                    collaboratorsArray.map((collaborator, index) => {
 
                       // Find the corresponding team member
                       const collabName = collaboratorData.find(member => member.name === collaborator);
@@ -139,7 +146,9 @@ function ProjectContentPage({ project, projectList }) {
         </div>
         <div class="border-line"></div>
         <div className="other-projects">
+          <div class="other-projects-header">
           <h2>Other Projects</h2>
+            </div>
           <div className="project-cards-container">
             {projectList.length > 4 && isScrolled && (
               <button className="scroll-button" onClick={scrollLeft}>
@@ -161,6 +170,11 @@ function ProjectContentPage({ project, projectList }) {
             <button className="scroll-button" onClick={scrollRight}>
               <i className="fa-solid fa-circle-arrow-right"></i>
             </button>
+          </div>
+          <div className="next-project-container">
+            <Link to={`/content/${nextProject.targetSection}`} className="next-project-button">
+            Next Project <i className="fa-solid fa-circle-arrow-right"></i>
+            </Link>
           </div>
         </div>
 
