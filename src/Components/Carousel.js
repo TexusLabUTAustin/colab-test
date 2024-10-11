@@ -28,7 +28,7 @@ const CarouselImages = [
         text: `"By bringing together experts, policymakers, and communities, the UT-City Climate CoLab is shaping a more resilient future for cities in the face of climate change.”`, 
         overlayColor: 'rgba(28, 53, 131, 0.55)',
         name: "- Marc Coudert",
-        affiliation: "City of Austin’s Office of Sustainability, Chief Sustainability Officer",
+        affiliation: "Climate Adaptation & Resilience Manager",
         isQuote: true 
     },
     { 

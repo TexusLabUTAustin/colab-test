@@ -12,12 +12,13 @@ const dropdownData = [
         ],
     },
     {
-        title: "Decision Calendars",
-        icon: `${process.env.PUBLIC_URL}/images/Calendar-icon.png`,
+        title: "Synthesis Studies",
+        icon: `${process.env.PUBLIC_URL}/images/Data-icon.png`,
         options: [
-            { text: "Work with City operations", link: "#" },
-            { text: "Document What climate information is needed, Who needs it, When, Why?", link: "#" },
-            { text: "How accurate, and How will it be used?", link: "#" },
+            { text: "Cool Pavement", link: "#" },
+            { text: "Fire, flood, hotspots", link: "#" },
+            { text: "If-then assessments for future city growth and climate", link: "#" },
+            { text: "Classroom and public education", link: "#" },
         ],
     },
     {
@@ -35,16 +36,7 @@ const dropdownData = [
             { text: "High resolution data based on different department needs", link: "#" },
             { text: "Local-scale climate products", link: "#" },
             { text: "Combine Data + Lived Experience", link: "#" },
-        ],
-    },
-    {
-        title: "Synthesis Studies",
-        icon: `${process.env.PUBLIC_URL}/images/Data-icon.png`,
-        options: [
-            { text: "Cool Pavement", link: "#" },
-            { text: "Fire, flood, hotspots", link: "#" },
-            { text: "If-then assessments for future city growth and climate", link: "#" },
-            { text: "Classroom and public education", link: "#" },
+            { text: "Decision Calendar", link: "#" },
         ],
     },
 ];
@@ -70,7 +62,6 @@ const About = () => {
                 <h1 className="focus-title ut-focus">UT Focus</h1>
 
                 <ul className="focus-content">
-                    <li>Products and research staff position</li>
                     <li>Build on Planet Texas 2050 and AI for Good Systems Initiatives at UT</li>
                     <li>Coordinate access to expertise across UT, and undertake research projects</li>
                     <li>Develop data, product tools, and policy briefs/ assessments</li>
@@ -82,7 +73,6 @@ const About = () => {
             <div className="focus-box city-focus-box">
                 <h1 className="focus-title city-focus">City Focus</h1>
                 <ul className="focus-content">
-                    <li>Project Manager embedded with City</li>
                     <li>Coordinate Access to City departmental staff and decisions</li>
                     <li>Provide feedback and implement data and tools</li>
                     <li>Co-development and Policy as well as Community Interface</li>

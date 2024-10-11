@@ -118,7 +118,7 @@
   projectPictureSrc: heatcover-report.png
   pictureSrc: heat_playbookcover.png
   reportName: heat_playbook.pdf
-  contact: ''
+  contact: 'Alexia Leclercq, Marc Coudert, Molly'
 
 - title: Decision Calendars
   targetSection: decision-calendars
@@ -175,7 +175,7 @@
   projectPictureSrc: hurricaneHelene.jpg
   pictureSrc: hurricaneHelene.jpg
   reportName: ''
-  contact: 'Sasanka Talukdar, Shyama Mohanty, Alka Tiwari, Rashith'
+  contact: 'Sasanka Talukdar, Shyama Mohanty, Alka Tiwari, Rashith Mallesh'
 
 - title: AusTWIN Austin Digital Twins
   targetSection: AusTWIN-digital-twins
