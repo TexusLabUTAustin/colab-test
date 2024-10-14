@@ -5,51 +5,56 @@ import { collaboratorData, contactData } from './ProjectData';
 
 
 function ProjectContentPage({ project, projectList }) {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [visibleIndex, setVisibleIndex] = useState(0);
+  const itemsPerPage = 4;
 
   if (!project) {
     return <div>Project not found.</div>;
   }
 
-  const collaboratorsArray = project.Collaborators ? project.Collaborators.split(',').map((name) => name.trim()) : '';
-  const contacts = project.contact.split(',').map((contactName) => contactName.trim());
+  const totalItems = projectList.filter(p => p.title !== project.title).length;
 
+  // Scroll functions
+  const scrollRight = () => {
+    const container = document.querySelector('.project-cards');
+    const cardWidth = 275 + 10;
+  
+    const totalItems = projectList.filter(p => p.title !== project.title).length;
+  
+    if (visibleIndex + itemsPerPage < totalItems) {
+      container.scrollBy({
+        top: 0,
+        left: cardWidth,
+        behavior: 'smooth',
+      });
+      setVisibleIndex(prevIndex => prevIndex + itemsPerPage);
+    }
+  };
+  
+  const scrollLeft = () => {
+    const container = document.querySelector('.project-cards');
+    const cardWidth = 275 + 10; 
+
+    if (visibleIndex - itemsPerPage >= 0) {
+      container.scrollBy({
+        top: 0,
+        left: -cardWidth,
+        behavior: 'smooth',
+      });
+      setVisibleIndex(prevIndex => prevIndex - itemsPerPage);
+    }
+  };
+
+  const currentIndex = projectList.findIndex(p => p.title === project.title);
+  const nextProject = projectList[currentIndex + 1] || projectList[0];
+
+  const collaboratorsArray = project.Collaborators ? project.Collaborators.split(',').map((name) => name.trim()) : [];
+  const contacts = project.contact.split(',').map((contactName) => contactName.trim());
   const validContacts = contacts.filter(contact => {
     const contactName = contactData.find(member => member.name === contact);
     return contactName && contactName.email; // Keep only valid contacts with an email
   });
 
-  // Find the current project index
-  const currentIndex = projectList.findIndex(p => p.title === project.title);
-  
-  // Get the next project
-  const nextProject = projectList[currentIndex + 1] || projectList[0];
-
-  const scrollRight = () => {
-    const container = document.querySelector('.project-cards');
-    container.scrollBy({
-      top: 0,
-      left: container.offsetWidth,
-      behavior: 'smooth',
-    });
-    setIsScrolled(true); // Always set to true when scrolling right
-  };
-
-  const scrollLeft = () => {
-    const container = document.querySelector('.project-cards');
-    container.scrollBy({
-      top: 0,
-      left: -container.offsetWidth,
-      behavior: 'smooth',
-    });
-  
-    // Check if at the start after scrolling left
-    setTimeout(() => {
-      if (container.scrollLeft <= 0) {
-        setIsScrolled(false); // Set to false if at the start
-      }
-    }, 300); // Timeout should match your scroll behavior duration
-  };
 
   return (
     <div>
@@ -150,7 +155,7 @@ function ProjectContentPage({ project, projectList }) {
           <h2>Other Projects</h2>
             </div>
           <div className="project-cards-container">
-            {projectList.length > 4 && isScrolled && (
+          {visibleIndex > 0 && (
               <button className="scroll-button" onClick={scrollLeft}>
                 <i className="fa-solid fa-circle-arrow-left"></i>
               </button>
@@ -158,6 +163,7 @@ function ProjectContentPage({ project, projectList }) {
             <div class="project-cards">
               {projectList
                 .filter(p => p.title !== project.title)
+                .slice(visibleIndex, visibleIndex + itemsPerPage)
                 .map((proj, index) => (
                   <div className="project-card" key={index}>
                     <Link to={`/content/${proj.targetSection}`} key={index}>
@@ -167,9 +173,11 @@ function ProjectContentPage({ project, projectList }) {
                   </div>
                 ))}
             </div>
-            <button className="scroll-button" onClick={scrollRight}>
-              <i className="fa-solid fa-circle-arrow-right"></i>
-            </button>
+            {visibleIndex + itemsPerPage < totalItems && (
+              <button className="scroll-button" onClick={scrollRight}>
+                <i className="fa-solid fa-circle-arrow-right"></i>
+              </button>
+            )}
           </div>
           <div className="next-project-container">
             <Link to={`/content/${nextProject.targetSection}`} className="next-project-button">

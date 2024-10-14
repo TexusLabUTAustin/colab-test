@@ -235,4 +235,39 @@
   reportName: ''
   contact: 'Patrick Bixler,Maddy Richter-Atkinson, Deidra Miniard'
 
+- title: 'Understanding Heat in North Austin, TX'
+  targetSection: understanding-heat-in-north-austin
+  shortContent: >-
+    The document details efforts by Go! Austin/Vamos! Austin (GAVA), the City of
+    Austin, and the University of Texas to address extreme heat in Austin's
+    Eastern Crescent, focusing on vulnerable communities. It highlights
+    community engagement, heat mapping, and the development of strategies like
+    tree planting, bus shelters, and splash pads to mitigate heat impacts. The
+    project emphasizes collaboration with residents to prioritize and implement
+    solutions for better climate resilience and health outcomes.
+  longContent: >-
+    In 2020, University of Texas at Austin, Go! Austin/Vamos! Austin (GAVA), and
+    the City of Austin worked together to create a map and understand how hot it
+    gets in different parts of Austin, what it’s like to live with it, and how
+    it affects our health and activity. These partners were funded by the
+    National Integrated Heat Health Information System (NIHHIS) and the National
+    Oceanic and Atmospheric Administration's (NOAA's) Climate Program Office.
+    The research team, led by University of Texas at Austin Jackson School of
+    Geoscience researchers, measured air temperature to produce a series of maps
+    that the community helped create. This data also helped the team see where
+    trees are, areas without shade, and locations of bus stops without shelters.
+    Their goal was to bring attention to areas within the city of Austin where
+    people live with higher levels of stress impacting their health, experience
+    high urban heat temperatures, and lack access to shade. The maps guided the
+    team to focus on peoples’ lived experiences with urban heat. These maps help
+    the team develop strategies with the community to address urban heat.
+  Collaborators: >-
+    GAVA, Office of Sustainability,Office of Resilience,University of Texas at
+    Austin
+  projectPictureSrc: gavaProjectCover.png
+  pictureSrc: gavaCommunityCover.png
+  reportName: GAVACommunity_2022-2023.pdf
+  contact: ''
+
+
 

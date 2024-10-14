@@ -39,6 +39,10 @@ export const collaboratorData
   {
     name:'GAVA',
     image: process.env.PUBLIC_URL + "/images/GAVAlogo.png"
+  },
+  {
+    name:'University of Texas at Austin',
+    image: process.env.PUBLIC_URL + "/images/UOTlogo.png"
   }
 ]
 
