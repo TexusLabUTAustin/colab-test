@@ -18,7 +18,7 @@ const Contact = () => {
                     </div>
                 <div class="info-box">
                     <h2 class="info-heading">Mailing Location</h2>
-                    <p class="info-content"><strong>We are located in the Jackson School of Geosciences</strong>
+                    <p class="info-content"><strong style={{fontWeight:"100"}}>We are located in the Jackson School of Geosciences</strong>
                     <br /><br />23 San Jacinto Blvd Austin, TX 78712</p>                    
                 </div>
             </div>

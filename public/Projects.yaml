@@ -104,21 +104,34 @@
   reportName: ''
   contact: 'Trevor Brooks, Angela Johnson, Naveen Sudharsan'
 
-- title: Heat Resilience Playbook
-  targetSection: heat-resilience-playbook
+- title: Community Heat Mapping
+  targetSection: community-heat-mapping
   shortContent: >-
-    The Austin Heat Resilience Playbook provides strategies and actions to
-    combat extreme heat, focusing on community preparedness and infrastructure
-    improvements to enhance the city's resilience.
+    The primary objective of this project is to establish a meaningful
+    connection between climate science and community groups, with the intent of
+    ensuring that the information generated is not just useful, but usable.
   longContent: >-
-    The Austin Heat Resilience Playbook provides strategies and actions to
-    combat extreme heat, focusing on community preparedness and infrastructure
-    improvements to enhance the city's resilience.
-  Collaborators: ''
-  projectPictureSrc: heatcover-report.png
-  pictureSrc: heat_playbookcover.png
-  reportName: heat_playbook.pdf
-  contact: 'Alexia Leclercq, Marc Coudert, Molly'
+    The initial step in achieving this goal involves the creation of a
+    comprehensive community heat mapping handbook. This handbook will serve as a
+    valuable resource, guiding communities through the intricate process of 
+    mapping heat in their local neighborhoods. The guide is designed to
+    incorporate various types of sensors and budgets to be as inclusive to
+    communities as possible. It also goes beyond mapping, offering additional
+    content  that includes strategies for heat mitigation, illustrative case
+    studies, and health tips.
+     Through using this handbook, participating communities will be empowered
+    with the tools and knowledge necessary to comprehend the distribution 
+     of heat within their locality. Moreover, they will gain insights into effective strategies to mitigate extreme heat conditions prevalent in their neighborhoods.
+     This handbook is being collaboratively developed in partnership with the 
+    Pan American Health Organization (PAHO), the National Oceanic and
+    Atmospheric Administration (NOAA), and a dedicated group in Colombia, with a
+    focus on benefiting communities in South America and the Caribbean in
+    addition to the US
+  Collaborators: 'GAVA'
+  projectPictureSrc: FLIR0165.jpg
+  pictureSrc: FLIR0165.jpg
+  reportName: ''
+  contact: 'Alexia Leclercq, Marc Coudert, Molly Ellsworth'
 
 - title: Decision Calendars
   targetSection: decision-calendars

@@ -66,20 +66,13 @@
     width:min(600px, 50%);
     margin-bottom: auto;
     color: #02214C;
-    padding-bottom:40px;
-    
-    
-    
+    padding: 0 50px;
 }
 
 .ut-focus-box{
-    padding-right:80px;
-    padding-left:50px;
 }
 
 .city-focus-box{
-    padding-left:50px;
-    padding-right:60px;
 }
 
 .focus-section{
@@ -88,9 +81,8 @@
     flex-direction:row;
     display:flex;
     align-items:stretch;
-    justify-content: center;
-    padding-left:50px;
-    padding-top:40px;
+    justify-content: space-between;
+    padding: 50px 70px;
 }
 
 .focus-title{

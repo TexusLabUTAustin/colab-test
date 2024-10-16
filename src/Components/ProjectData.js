@@ -140,5 +140,9 @@ export const contactData
     name: "Deidra Miniard",
     email: 'deidra.miniard@austin.utexas.edu'
   },
+  {
+    name: "Molly Ellsworth",
+    email: 'molly.ellsworth@austintexas.gov'
+  },
 ]
 

@@ -82,52 +82,52 @@ const CoLab = () => {
                   <h1>Problems to Solve</h1>
                   <div className="blob-section">
                       <div className="blob">
-                          <div class="blob-icon">
-                              <img src={`${process.env.PUBLIC_URL}/images/Data_problems.png`} />
-                          </div>
                           <div className="blob-text">
-                              <h2>Data Support</h2>
-                          </div>
-                          <div className="blob-hover">
                               <h2>Data Support</h2>
                               <p>Fills a void of directly supporting City climate data needs.</p>
                           </div>
+                          <div className="blob-hover">
+                          <div class="blob-icon">
+                              <img src={`${process.env.PUBLIC_URL}/images/Data_problems.png`} />
+                          </div>
+                              <h2>Data Support</h2>
+                          </div>
                       </div>
                       <div className="blob">
-                          <div class="blob-icon">
-                              <img src={`${process.env.PUBLIC_URL}/images/Connectivity.png`} />
-                          </div>
                           <div className="blob-text">
-                              <h2>Department<br/>Connectivity</h2>
-                          </div>
-                          <div className="blob-hover">
                               <h2>Department<br/>Connectivity</h2>
                               <p>City data needs vary across departments. Data need to be connected to city department decision making.</p>
                           </div>
+                          <div className="blob-hover">
+                          <div class="blob-icon">
+                              <img src={`${process.env.PUBLIC_URL}/images/Connectivity.png`} />
+                          </div>
+                              <h2>Department<br/>Connectivity</h2>
+                          </div>
                       </div>
                       <div className="blob">
-                          <div class="blob-icon">
-                              <img src={`${process.env.PUBLIC_URL}/images/Accessability.png`} />
-                          </div>
                           <div className="blob-text">
-                              <h2>Accessibility</h2>
-                          </div>
-                          <div className="blob-hover">
                               <h2>Accessibility</h2>
                               <p>Specific data and models are often confusing for community and staff. The goal is to make research accessible to all.</p>
                           </div>
+                          <div className="blob-hover">
+                          <div class="blob-icon">
+                              <img src={`${process.env.PUBLIC_URL}/images/Accessability.png`} />
+                          </div>
+                              <h2>Accessibility</h2>
+                          </div>
                       </div>
 
-                      <div className="blob">
+                      <div className="blob">                 
+                          <div className="blob-text">
+                              <h2>Stakeholder<br/>Partnerships</h2>
+                              <p>UT-City climate research projects need stakeholder partnerships to be successful.</p>
+                          </div>
+                          <div className="blob-hover">
                           <div class="blob-icon">
                               <img src={`${process.env.PUBLIC_URL}/images/Partnerships.png`} />
                           </div>
-                          <div className="blob-text">
                               <h2>Stakeholder<br/>Partnerships</h2>
-                          </div>
-                          <div className="blob-hover">
-                              <h2>Stakeholder<br/>Partnerships</h2>
-                              <p>UT-City climate research projects need stakeholder partnerships to be successful.</p>
                           </div>
                       </div>
                   </div>
